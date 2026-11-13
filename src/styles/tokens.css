@@ -1,0 +1,20 @@
+:root {
+  --ivory: #F8F6F2;
+  --sand: #E8E0D3;
+  --charcoal: #20211F;
+  --mocha: #51453B;
+  --brass: #B69A70;
+  --surface: #FFFFFF;
+  --success: #356859;
+  --error: #A44949;
+  --muted: #70685F;
+  --border: #DED9D1;
+  --radius: 8px;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --bs-body-font-family: var(--font-body);
+  --bs-body-color: var(--charcoal);
+  --bs-body-bg: var(--ivory);
+  --bs-border-color: var(--border);
+  --bs-secondary-color: var(--muted);
+}

@@ -1,0 +1,22 @@
+import { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useStore } from '../../hooks/useStore.jsx';
+import { store } from '../../services/browserStore.js';
+import { nextStatuses } from '../../services/store.js';
+import { dateTime, money } from '../../utils/format.js';
+import OrderJourney from '../../components/OrderJourney.jsx';
+import { Alert, ConfirmDialog, EmptyState, Icon, PageIntro, ProductImage, StatusBadge } from '../../components/UI.jsx';
+
+export default function OrderDetails() {
+  const { id } = useParams();
+  const { state, notify } = useStore();
+  const [error, setError] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [cancel, setCancel] = useState(false);
+  const order = state.orders.find(order => order.id === id);
+  if (!order) return <EmptyState icon="bag" title="Order not found." to="/admin/orders" action="Back to orders"/>;
+  const allowed = nextStatuses(order.status);
+  const next = allowed.find(status => status !== 'Cancelled');
+  async function transition(status) { setError(''); setBusy(true); try { await store.transitionOrder(id, status); notify(`Order updated to ${status}.`); } catch (error) { setError(error.message); throw error; } finally { setBusy(false); } }
+  return <><Link className="text-link mb-4" to="/admin/orders"><Icon name="arrow-left"/> Back to orders</Link><PageIntro eyebrow="THE ORDER DETAILS" title={order.number} action={<StatusBadge status={order.status}/>}>{dateTime(order.createdAt)} · Philippine time</PageIntro><Alert>{error}</Alert><div className="row g-4"><div className="col-xl-8"><section className="admin-panel"><div className="panel-heading"><h2>Fragrance selection</h2><span className="text-muted small">Saved item snapshots</span></div><div className="table-scroll" tabIndex="0" role="region" aria-label="Order items table"><table className="table admin-table"><thead><tr><th scope="col">Product</th><th scope="col">Unit price</th><th scope="col">Quantity</th><th scope="col">Line total</th></tr></thead><tbody>{order.items.map(item => <tr key={item.productId}><td><div className="table-product"><ProductImage image={item.image} name={item.name}/><div><strong>{item.name}</strong><small>{item.brand}</small></div></div></td><td>{money(item.unitPrice)}</td><td>{item.quantity}</td><td className="price-cell">{money(item.unitPrice * item.quantity)}</td></tr>)}</tbody></table></div><div className="admin-order-total"><div><span>Subtotal</span><span>{money(order.total)}</span></div><div><strong>Total</strong><strong>{money(order.total)}</strong></div><small>No additional fees. All amounts in PHP.</small></div></section><section className="admin-panel p-4 mt-4"><h2 className="mb-3">Order journey</h2><OrderJourney order={order}/></section></div><div className="col-xl-4"><section className="admin-panel p-4"><h2 className="mb-3">Customer</h2><dl className="admin-details"><dt>Name</dt><dd>{order.customer.name}</dd><dt>Email</dt><dd>{order.customer.email}</dd><dt>Contact number</dt><dd>{order.customer.phone}</dd><dt>Delivery address</dt><dd className="preserve-lines">{order.customer.address}</dd><dt>Payment method</dt><dd>{order.paymentMethod}<small className="d-block text-muted">Simulated selection only</small></dd><dt>Order notes</dt><dd className="preserve-lines">{order.notes || 'No notes added.'}</dd></dl></section><section className="admin-panel p-4 mt-4"><h2 className="mb-3">Manage status</h2><p className="text-muted">Current status: <strong>{order.status}</strong></p>{next ? <button className="btn btn-dark w-100" disabled={busy} onClick={() => transition(next).catch(() => {})}>{busy ? 'Saving…' : `Mark as ${next}`} <Icon name="arrow-right"/></button> : <p className="form-text">This order is final. No further status changes are allowed.</p>}{allowed.includes('Cancelled') && <button className="btn btn-outline-danger w-100 mt-2" disabled={busy} onClick={() => setCancel(true)}>Cancel order</button>}<p className="form-text mt-3 mb-0">Status changes follow the next step only. Cancellation is available from Pending or Confirmed and restores stock exactly once.</p></section></div></div>{cancel && <ConfirmDialog title="Cancel this demo order?" confirmLabel="Cancel order & restore stock" dismissLabel="Keep order" onClose={() => setCancel(false)} onConfirm={() => transition('Cancelled')}><p>{order.number} will become final and its purchased quantities will be returned to stock. This cannot be repeated or reversed.</p></ConfirmDialog>}</>;
+}
