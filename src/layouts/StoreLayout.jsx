@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Brand, Icon } from '../components/UI.jsx';
 import { useStore } from '../hooks/useStore.jsx';
+import { isLoggedIn } from '../services/auth.js';
 import { itemCount } from '../utils/format.js';
 
 export default function StoreLayout() {
@@ -12,10 +13,11 @@ export default function StoreLayout() {
   const location = useLocation();
   const navigate = useNavigate();
   const count = itemCount(state.cart);
+  const adminSignedIn = isLoggedIn();
   useEffect(() => { setOpen(false); setSearchOpen(false); }, [location.pathname, location.search]);
   return <>
     <a className="skip-link" href="#main-content">Skip to content</a>
-    <div className="announcement"><span>AN INVITATION TO DISCOVER</span><span>Arabian soul. Everyday elegance.</span><span className="announcement-demo">A FICTIONAL BOUTIQUE · DEMO</span></div>
+    <div className="announcement"><span>AN INVITATION TO DISCOVER</span><span>Arabian soul. Everyday elegance.</span><Link className="announcement-login" to={adminSignedIn ? '/admin' : '/admin/login'}><Icon name={adminSignedIn ? 'grid' : 'person-circle'}/>{adminSignedIn ? 'Admin Dashboard' : 'Login'}</Link></div>
     <header className="store-header"><div className="container header-inner"><Brand/><nav className={`main-nav ${open ? 'is-open' : ''}`} aria-label="Main navigation" id="main-navigation"><NavLink end to="/">Home</NavLink><NavLink to="/shop">Shop</NavLink><NavLink to="/collections">Categories</NavLink><NavLink to="/our-story">Our Story</NavLink><NavLink to="/orders" className="mobile-orders-nav">My Orders</NavLink></nav><div className="header-actions"><Link className="orders-link" to="/orders" aria-label="My Orders"><Icon name="bag-check"/><span>My Orders</span></Link><button className="icon-button" aria-label="Search fragrances" aria-expanded={searchOpen} aria-controls="header-search" onClick={() => setSearchOpen(!searchOpen)}><Icon name="search"/></button><Link className="cart-link" to="/cart" aria-label={`Shopping cart, ${count} items`}><Icon name="cart3"/><span className="bag-label">Cart</span><span className="bag-count">{count}</span></Link><button className="icon-button mobile-menu" aria-label="Toggle navigation" aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}><Icon name={open ? 'x-lg' : 'list'}/></button></div></div>
       {searchOpen && <form className="container header-search" id="header-search" onSubmit={event => { event.preventDefault(); navigate(`/shop?q=${encodeURIComponent(search)}`); }}><label className="visually-hidden" htmlFor="global-search">Search by fragrance name</label><input id="global-search" autoFocus className="form-control" placeholder="Find your next signature scent…" value={search} onChange={e => setSearch(e.target.value)}/><button className="btn btn-dark">Search <Icon name="arrow-right"/></button></form>}
     </header>

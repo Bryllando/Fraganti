@@ -38,7 +38,7 @@ No `.env` file, API keys, or environment variables are required.
 - Email: `admin@oudandaura.demo`
 - Password: `AuraDemo2026!`
 
-You can also click **Use demo credentials** on the login page. Customers do not need an account to check out.
+Click **Login** at the top of the shop, then **Use demo credentials** on the login page. Customers can continue as guests and do not need an account to check out.
 
 ## Storage
 

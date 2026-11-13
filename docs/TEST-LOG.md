@@ -38,6 +38,7 @@ Final commands and results:
 | Concurrent inventory edits | Pass | Another-tab price/stock changes trigger review or conflict recovery instead of silently overwriting data. |
 | Queued quantity updates | Pass | The field remains editable while storage writes wait. Checkout stays disabled until all pending saves finish. A failed older write cannot replace or invalidate the latest successful edit. |
 | Malformed display data | Pass | Invalid category/product/order image and display fields are rejected before rendering. Recovery preserves the original stored document until reset is explicitly confirmed. Older records with missing optional fields still load. |
+| Visible admin login | Pass | Follow-up browser checks at 375, 768, and 1280 px verified the top login button, keyboard access, guest shopping link, invalid credentials, sign-in, dashboard link, and logout. No page overflow or browser errors were found. Production build passed. |
 
 ## Visual evidence and test boundaries
 
