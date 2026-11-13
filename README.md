@@ -2,8 +2,6 @@
 
 A perfume shop demo for the CubeTech internship assessment. Customers can browse perfumes and place guest orders. The admin dashboard manages products, categories, and orders.
 
-[GitHub repository](https://github.com/Bryllando/Fraganti)
-
 ## Technologies
 
 React, Vite, JavaScript (JSX), Bootstrap 5, Bootstrap Icons, React Router, and CSS.
