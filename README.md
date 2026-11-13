@@ -77,13 +77,3 @@ To start again, open **Admin → Overview → Reset demo data** and confirm. Thi
 | `/admin/orders` | Orders |
 | `/admin/orders/:id` | Order details and status |
 | `/admin/customers` | Customer summary |
-
-## Tests and demo
-
-Run `npm test` for the data tests.
-
-[Test log](docs/TEST-LOG.md) · [Screenshots](docs/screenshots/README.md) · [Demo video](docs/demo/oud-aura-walkthrough.webm)
-
-## AI assistance
-
-Codex was used for coding assistance. Sample images were created with ImageGen.
