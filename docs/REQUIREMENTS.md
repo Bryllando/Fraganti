@@ -33,7 +33,7 @@ Sources reviewed: all seven pages of `CubeTech_Web_Development_Intern_Assessment
 
 ## Submission boundaries
 
-The assessment email address and instruction to submit are reference information, not an instruction to send an email. No submission is sent automatically. A GitHub destination and reviewer access must be configured by the project owner; local source, evidence, and exact publication instructions are prepared here.
+The assessment email address and instruction to submit are reference information, not an instruction to send an email. No submission is sent automatically. The source repository is [Bryllando/Fraganti](https://github.com/Bryllando/Fraganti). Hosting is not configured; see `PUBLISHING.md` for handoff notes.
 
 ## Marketplace-style flow refinement
 

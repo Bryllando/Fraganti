@@ -50,4 +50,4 @@ The verification caught and fixed rapid filter-state loss, off-screen table acce
 | Firefox / Safari | Not tested | Verification was performed in Chromium. |
 | Physical phones / assistive technology audit | Not tested | Responsive emulation, semantic controls, labels and keyboard focus are covered; no separate device or screen-reader certification was performed. |
 | Real payments, delivery, production access control | Not tested | Outside the PDF's demo scope; these services do not exist in this application. |
-| GitHub reviewer access / hosted deployment | Not tested | Local Git is initialized on main. Publication and reviewer access require the destination repository URL; no hosting environment is configured. See PUBLISHING.md. |
+| GitHub reviewer access / hosted deployment | Not tested | The source repository is https://github.com/Bryllando/Fraganti on main. Reviewer access has not been independently checked; no hosting environment is configured. See PUBLISHING.md. |
