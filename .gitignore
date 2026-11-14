@@ -1,9 +1,14 @@
 node_modules/
 dist/
 .tools/
+/tools/
 tmp/
 test-results/
 playwright-report/
 .env
-.env.local
+.env.*
+!.env.example
 *.log
+/CubeTech_Web_Development_Intern_Assessment.pdf
+/docs/
+/scripts/record-demo.mjs

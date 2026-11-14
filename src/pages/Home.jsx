@@ -11,7 +11,7 @@ export function CategoryCards() {
 export default function Home() {
   const { state } = useStore();
   const featured = state.products.filter(p => p.active && p.featured).slice(0, 4);
-  const newItems = state.products.filter(p => p.active && p.isNew).slice(0, 4);
+  const newItems = state.products.filter(p => p.active && p.isNew).slice(-4);
   return <>
     <section className="hero-section"><div className="container"><div className="hero-grid"><div className="hero-copy"><p className="eyebrow"><span className="tiny-line"/> A WORLD OF SCENT, THOUGHTFULLY CURATED</p><h1>Discover Your<br/>Signature <em>Scent</em></h1><p className="hero-description">Explore a curated world of Arabian fragrances, from fresh everyday scents to rich and captivating oud.</p><div className="hero-actions"><Link className="btn btn-dark" to="/shop">Shop Fragrances <Icon name="arrow-right"/></Link><Link className="text-link" to="/collections">Explore Collections <Icon name="arrow-up-right"/></Link></div><div className="hero-footnote"><span>01 / THE SIGNATURE COLLECTION</span><span>A little discovery. A lasting impression.</span></div></div><div className="hero-image-wrap"><img className="hero-image" src="/images/hero.png" alt="Original editorial image of Arabian-inspired fragrance bottles on warm travertine plinths" fetchPriority="high"/><span className="hero-image-note">THE ART OF ARABIAN FRAGRANCE</span></div></div></div></section>
     <div className="values-strip"><div className="container"><span><Icon name="flower1"/> Thoughtfully curated scents</span><span><Icon name="droplet"/> Inspired by Arabian perfumery</span><span><Icon name="gift"/> A little luxury, every day</span></div></div>

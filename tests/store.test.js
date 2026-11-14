@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createSeed } from '../src/data/seed.js';
+import { CATALOG_VERSION, createSeed, NEW_PRODUCTS } from '../src/data/seed.js';
 import { createStore, customerSummary, dashboardStats, filterProducts, quoteCart, STORAGE_KEY, validateCustomer } from '../src/services/store.js';
 import { money, orderTotal, parsePrice } from '../src/utils/format.js';
 
@@ -12,7 +12,7 @@ function setup(seed = createSeed()) {
   let counter = 0;
   const storage = { getItem: () => raw, setItem: (_, next) => { if (fail) throw new Error('Storage quota'); raw = next; } };
   const options = { id: () => `${String(++counter).padStart(8, '0')}-demo-unique`, now: () => new Date(Date.UTC(2026, 10, 13, 1, 0, counter)).toISOString() };
-  return { store: createStore(storage, options), recreate: () => createStore(storage, options), setFail: value => { fail = value; }, setRaw: value => { raw = value; } };
+  return { store: createStore(storage, options), recreate: () => createStore(storage, options), getRaw: () => raw, setFail: value => { fail = value; }, setRaw: value => { raw = value; } };
 }
 
 async function purchase(store, email = customer.email, productId = 'p-9pm', quantity = 1, changes = {}) {
@@ -24,10 +24,69 @@ function productInput(product, changes = {}) {
   return { ...product, price: (product.price / 100).toFixed(2), stock: String(product.stock), ...changes };
 }
 
-test('seed has 12 perfumes, three categories, inactive and active out-of-stock examples', () => {
+test('seed has 16 perfumes, three categories, inactive and active out-of-stock examples', () => {
   const state = createSeed();
-  assert.equal(state.products.length, 12); assert.equal(state.categories.length, 3);
+  assert.equal(state.products.length, 16); assert.equal(state.categories.length, 3);
+  assert.deepEqual(NEW_PRODUCTS.map(product => product.name), ['Shiyaaka Shadow', 'Shiyaaka Snow', 'Hawas Ice', 'Hawas Kobra']);
   assert.ok(state.products.some(p => !p.active)); assert.ok(state.products.some(p => p.active && p.stock === 0));
+});
+
+test('older catalogs gain the new perfumes without losing orders, carts, edits or deleted products', async () => {
+  const fixture = setup();
+  await purchase(fixture.store);
+  await fixture.store.addToCart('p-hawas', 3);
+  const legacy = fixture.store.read();
+  delete legacy.catalogVersion;
+  legacy.products = legacy.products.filter(product => !NEW_PRODUCTS.some(added => added.id === product.id) && product.id !== 'p-cedar');
+  legacy.products.find(product => product.id === 'p-9pm').name = 'My edited fragrance';
+  const raw = JSON.stringify(legacy);
+  fixture.setRaw(raw);
+  fixture.setFail(true);
+  const upgraded = fixture.store.read();
+  assert.equal(upgraded.products.length, 15);
+  assert.equal(upgraded.catalogVersion, CATALOG_VERSION);
+  assert.deepEqual(upgraded.orders, legacy.orders);
+  assert.deepEqual(upgraded.cart, legacy.cart);
+  assert.deepEqual(upgraded.products.filter(product => !NEW_PRODUCTS.some(added => added.id === product.id)), legacy.products);
+  assert.equal(fixture.getRaw(), raw, 'reading an upgrade must not overwrite saved data');
+  await assert.rejects(fixture.store.addToCart('p-hawas-ice'), error => error.code === 'STORAGE');
+  assert.equal(fixture.getRaw(), raw, 'a failed save must preserve the original catalog');
+  fixture.setFail(false);
+  await fixture.store.initialize();
+  assert.equal(JSON.parse(fixture.getRaw()).catalogVersion, CATALOG_VERSION);
+  assert.deepEqual(fixture.recreate().read().orders, legacy.orders);
+});
+
+test('catalog additions reuse a renamed category ID and restore only missing required categories', () => {
+  const legacy = createSeed();
+  delete legacy.catalogVersion;
+  legacy.products = legacy.products.filter(product => product.categoryId === 'amber');
+  legacy.categories = [legacy.categories.find(category => category.id === 'amber'), { id: 'custom-fresh', name: '  FRESH & AQUATIC  ', description: 'My category' }];
+  const { store } = setup(legacy);
+  const upgraded = store.read();
+  assert.equal(upgraded.categories.length, 3);
+  assert.ok(upgraded.categories.some(category => category.id === 'oud'));
+  assert.ok(!upgraded.categories.some(category => category.id === 'fresh'));
+  for (const product of NEW_PRODUCTS.filter(product => product.categoryId === 'fresh')) {
+    assert.equal(upgraded.products.find(added => added.id === product.id).categoryId, 'custom-fresh');
+  }
+});
+
+test('catalog upgrades preserve existing new-product edits and do not resurrect later deletions', async () => {
+  const legacy = createSeed();
+  delete legacy.catalogVersion;
+  legacy.products = legacy.products.filter(product => !NEW_PRODUCTS.some(added => added.id === product.id));
+  const edited = { ...structuredClone(NEW_PRODUCTS[0]), name: 'My Shadow', price: 199900, stock: 0, active: false };
+  legacy.products.push(edited);
+  const fixture = setup(legacy);
+  const upgraded = fixture.store.read();
+  assert.equal(upgraded.products.length, 16);
+  assert.deepEqual(upgraded.products.find(product => product.id === edited.id), edited);
+  await fixture.store.deleteProduct('p-shiyaaka-snow');
+  assert.ok(!fixture.recreate().read().products.some(product => product.id === 'p-shiyaaka-snow'));
+  await fixture.store.reset();
+  assert.equal(fixture.recreate().read().products.length, 16);
+  assert.equal(fixture.recreate().read().products.find(product => product.id === edited.id).stock, 18);
 });
 
 test('01: combined case-insensitive search/category and both price sorts; no matches', () => {
@@ -129,7 +188,7 @@ test('06: product/category CRUD validates and protects referenced/assigned recor
   await store.saveCategory({ name: 'Edited Edit' }, category.id);
   const p = store.read().products[0];
   const newId = await store.saveProduct(productInput(p, { name: 'New Sample', categoryId: category.id }));
-  assert.equal(store.read().products.length, 13);
+  assert.equal(store.read().products.length, 17);
   await assert.rejects(store.deleteCategory(category.id), /assigned to products/);
   await store.deleteProduct(newId); await store.deleteCategory(category.id);
   await purchase(store);
@@ -181,7 +240,7 @@ test('08: metrics count all orders/products, normalized unique emails and Comple
   const cancelled = await purchase(store, 'maya@example.com', 'p-hawas', 1, { name: 'Latest Sample', phone: '09000009999' });
   await store.transitionOrder(cancelled.id, 'Cancelled');
   await purchase(store, 'other@example.com');
-  assert.deepEqual(dashboardStats(store.read()), { products: 12, orders: 3, pending: 1, completed: 1, customers: 2, sales: 245000 });
+  assert.deepEqual(dashboardStats(store.read()), { products: 16, orders: 3, pending: 1, completed: 1, customers: 2, sales: 245000 });
   const maya = customerSummary(store.read().orders).find(c => c.email === 'maya@example.com');
   assert.equal(maya.totalOrders, 2); assert.equal(maya.completedValue, 245000);
   assert.equal(maya.name, 'Latest Sample'); assert.equal(maya.phone, '09000009999');
@@ -296,6 +355,8 @@ test('malformed display fields are rejected without replacing the stored data', 
   const fixture = setup(); await purchase(fixture.store);
   const valid = fixture.store.read();
   const corruptions = [
+    data => { data.catalogVersion = '2'; },
+    data => { data.catalogVersion = CATALOG_VERSION + 1; },
     data => { data.categories[0].image = 42; },
     data => { data.categories[0].description = {}; },
     data => { data.products[0].brand = {}; },

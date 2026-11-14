@@ -1,4 +1,4 @@
-import { createSeed } from '../data/seed.js';
+import { CATALOG_VERSION, createSeed, NEW_PRODUCTS, SEED_CATEGORIES } from '../data/seed.js';
 import { money, normalizeEmail, orderTotal, parsePrice } from '../utils/format.js';
 
 export const STORAGE_KEY = 'oud-aura:store:v1';
@@ -23,7 +23,7 @@ function optionalTextFields(record, fields) {
 }
 
 function validDocument(data) {
-  return data?.version === 1 && Number.isSafeInteger(data.revision) &&
+  return data?.version === 1 && Number.isSafeInteger(data.revision) && Number.isSafeInteger(data.catalogVersion ?? 1) && (data.catalogVersion ?? 1) >= 1 && (data.catalogVersion ?? 1) <= CATALOG_VERSION &&
     ['categories', 'products', 'cart', 'orders'].every(key => Array.isArray(data[key])) &&
     data.categories.every(c => typeof c.id === 'string' && typeof c.name === 'string' && optionalTextFields(c, ['description', 'image'])) &&
     data.products.every(p => typeof p.id === 'string' && typeof p.name === 'string' && typeof p.categoryId === 'string' && typeof p.description === 'string' && typeof p.image === 'string' && typeof p.active === 'boolean' && Number.isSafeInteger(p.price) && p.price > 0 && Number.isSafeInteger(p.stock) && p.stock >= 0 && optionalTextFields(p, ['brand', 'size']) && (p.notes == null || (typeof p.notes === 'object' && !Array.isArray(p.notes) && optionalTextFields(p.notes, ['top', 'middle', 'base'])))) &&
@@ -97,6 +97,17 @@ export function createStore(storage, { lock = null, now = () => new Date().toISO
     try {
       const data = JSON.parse(raw);
       assert(validDocument(data), 'Stored demo data has an unsupported format.', 'CORRUPT');
+      // Upgrade in memory; the next successful write saves the marker and respects later deletions.
+      if ((data.catalogVersion ?? 1) < CATALOG_VERSION) {
+        for (const product of NEW_PRODUCTS) {
+          if (data.products.some(existing => existing.id === product.id)) continue;
+          const original = SEED_CATEGORIES.find(category => category.id === product.categoryId);
+          let category = data.categories.find(category => category.id === original.id || category.name.trim().toLowerCase() === original.name.toLowerCase());
+          if (!category) { category = structuredClone(original); data.categories.push(category); }
+          data.products.push({ ...structuredClone(product), categoryId: category.id });
+        }
+        data.catalogVersion = CATALOG_VERSION;
+      }
       return data;
     } catch {
       throw new StoreError('Saved demo data could not be read. Your stored data has been kept. Reset the demo to start again.', 'CORRUPT');

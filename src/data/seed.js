@@ -4,7 +4,17 @@ export const SEED_CATEGORIES = [
   { id: 'oud', name: 'Woody & Oud', description: 'Depth, character, and a lasting impression. Discover the soul of oud.', image: '/images/catalog.png#bottle-4' },
 ];
 
-// Fictional sample formulations and prices; imagery is illustrative, not branded packaging.
+export const CATALOG_VERSION = 2;
+
+// Prices and stock are editable demo values; product images are generated illustrations.
+export const NEW_PRODUCTS = [
+  { id: 'p-shiyaaka-shadow', name: 'Shiyaaka Shadow', brand: 'Khadlaj · Shiyaaka collection', categoryId: 'oud', price: 225000, stock: 18, image: '/images/products/shiyaaka-shadow.webp', size: '100 ml', notes: { top: 'Pink pepper, grapefruit, lavender', middle: 'Dry amber, cedarwood, cashmere wood', base: 'Musk, patchouli, moss' }, description: 'Fresh grapefruit and pink pepper meet smooth amber and cedarwood. A textured woody fragrance with a soft musky finish, presented in Shiyaaka’s distinctive black bottle.' },
+  { id: 'p-shiyaaka-snow', name: 'Shiyaaka Snow', brand: 'Khadlaj · Shiyaaka collection', categoryId: 'fresh', price: 225000, stock: 18, image: '/images/products/shiyaaka-snow.webp', size: '100 ml', notes: { top: 'Mandarin orange, citrus, bergamot', middle: 'Neroli, nutmeg, pink pepper', base: 'Indonesian vetiver, cardamom' }, description: 'Bright mandarin and bergamot open into a gently spiced heart of neroli and nutmeg. Vetiver and cardamom bring a grounded finish to this fresh scent in a snowy white bottle.' },
+  { id: 'p-hawas-ice', name: 'Hawas Ice', brand: 'Rasasi · Hawas collection', categoryId: 'fresh', price: 325000, stock: 20, image: '/images/products/hawas-ice.webp', size: '100 ml', notes: { top: 'Frozen apple, bergamot, lemon, star anise', middle: 'Orange blossom, marine accord, plum, cardamom', base: 'Crystal moss, driftwood, amber, musk' }, description: 'Crisp apple and sparkling citrus lead into cool marine notes and a fruity, aromatic heart. Smooth woods and musk round out this refreshing addition to the Hawas collection.' },
+  { id: 'p-hawas-kobra', name: 'Hawas Kobra', brand: 'Rasasi · Hawas collection', categoryId: 'fresh', price: 345000, stock: 14, image: '/images/products/hawas-kobra.webp', size: '100 ml', description: 'Discover another side of the Hawas collection. A fresh fragrance presented in smoky brown glass, finished with the collection’s distinctive sculpted, coiled cap.' },
+].map(product => ({ active: true, featured: false, isNew: true, ...product }));
+
+// The original twelve perfumes use fictional sample scent profiles and illustrative bottles.
 export const SEED_PRODUCTS = [
   { id: 'p-9pm', name: '9PM After Hours', brand: 'Afnan · Sample collection', categoryId: 'amber', price: 245000, stock: 18, image: '/images/catalog.png#bottle-0', size: '100 ml', featured: true, notes: { top: 'Apple, bergamot', middle: 'Orange blossom, lavender', base: 'Vanilla, amber, tonka' }, description: 'An invitation to stay a little longer. Crisp orchard fruits melt into soft vanilla and warm amber, creating an expressive evening scent with a quietly magnetic finish.' },
   { id: 'p-hawas', name: 'Hawas Azure', brand: 'Rasasi · Sample collection', categoryId: 'fresh', price: 285000, stock: 24, image: '/images/catalog.png#bottle-1', size: '100 ml', featured: true, notes: { top: 'Bergamot, green apple', middle: 'Watery accord, cardamom', base: 'Musk, driftwood' }, description: 'Like a cool sea breeze on a sunlit afternoon. Fresh citrus and a clean aquatic heart settle into smooth woods for an easy signature you can wear every day.' },
@@ -18,8 +28,9 @@ export const SEED_PRODUCTS = [
   { id: 'p-spectre', name: 'Spectre Sandal', brand: 'French Avenue · Sample collection', categoryId: 'oud', price: 255000, stock: 14, image: '/images/catalog.png#bottle-9', size: '80 ml', isNew: true, notes: { top: 'Ginger, bergamot', middle: 'Sandalwood, cedar', base: 'Amber, patchouli' }, description: 'Smooth sandalwood with a spirited opening of ginger and citrus. A modern woody fragrance with clean lines, subtle warmth, and a lingering sense of calm.' },
   { id: 'p-cedar', name: 'Cedar & Saffron', brand: 'Fragrance World · Sample collection', categoryId: 'oud', price: 165000, stock: 25, image: '/images/catalog.png#bottle-10', size: '100 ml', notes: { top: 'Saffron, black pepper', middle: 'Cedar, suede', base: 'Vetiver, resin' }, description: 'Dry cedar and delicate saffron come together in a grounded, quietly distinctive fragrance. Soft suede adds texture to a versatile blend made for unhurried days.' },
   { id: 'p-reserve', name: 'Oud Reserve', brand: 'OUD & AURA · Archive collection', categoryId: 'oud', price: 425000, stock: 6, active: false, image: '/images/catalog.png#bottle-11', size: '50 ml', notes: { top: 'Saffron', middle: 'Aged oud', base: 'Resin, sandalwood' }, description: 'An archived house composition of aged woods and precious resins. This inactive sample demonstrates catalog management and is unavailable on the storefront.' },
+  ...NEW_PRODUCTS,
 ].map(product => ({ active: true, featured: false, isNew: false, ...product }));
 
 export function createSeed() {
-  return structuredClone({ version: 1, revision: 0, categories: SEED_CATEGORIES, products: SEED_PRODUCTS, cart: [], orders: [] });
+  return structuredClone({ version: 1, catalogVersion: CATALOG_VERSION, revision: 0, categories: SEED_CATEGORIES, products: SEED_PRODUCTS, cart: [], orders: [] });
 }

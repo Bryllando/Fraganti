@@ -1,6 +1,8 @@
 # OUD & AURA
 
-A perfume shop demo for the CubeTech internship assessment. Customers can browse perfumes and place guest orders. The admin dashboard manages products, categories, and orders.
+A simple perfume e-commerce website. Customers can browse perfumes and place guest orders. The admin dashboard manages products, categories, and orders.
+
+[GitHub repository](https://github.com/Bryllando/Fraganti)
 
 ## Technologies
 
@@ -46,7 +48,9 @@ Use the same browser, profile, and site URL for the shop and admin. Data is not 
 
 ## Sample data and reset
 
-The app starts with 12 sample perfumes in 3 categories, including an inactive product and an out-of-stock product.
+The app starts with 16 sample perfumes in 3 categories, including an inactive product and an out-of-stock product. Prices and stock are demo values you can edit in admin.
+
+Shiyaaka Shadow, Shiyaaka Snow, Hawas Ice, and Hawas Kobra also appear in existing saved catalogs without a reset. Saved orders and cart items are kept.
 
 To start again, open **Admin → Overview → Reset demo data** and confirm. This restores the sample catalog and clears saved orders and cart items. Use fictional customer details for demo orders.
 
