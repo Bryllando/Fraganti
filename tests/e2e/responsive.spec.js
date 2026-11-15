@@ -26,7 +26,7 @@ for (const width of [375, 768, 1280]) {
       await page.evaluate(() => document.fonts.ready);
       await expect(page.locator('h1')).toBeVisible();
       const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: innerWidth, outside: [...document.querySelectorAll('body *')].filter(element => element.getBoundingClientRect().right > innerWidth + 1 && !element.closest('.table-scroll')).slice(0, 12).map(element => ({ tag: element.tagName, class: element.className, right: element.getBoundingClientRect().right })) }));
-      if (screenshot) await page.screenshot({ path: 'docs/screenshots/' + screenshot + '-' + width + '.png', fullPage: true, animations: 'disabled' });
+      if (screenshot) await page.screenshot({ path: 'test-results/screenshots/' + screenshot + '-' + width + '.png', fullPage: true, animations: 'disabled' });
       expect(dimensions.page, 'Page overflow at ' + width + 'px: ' + path + ': ' + JSON.stringify(dimensions.outside)).toBeLessThanOrEqual(dimensions.viewport);
       const clippedControls = await page.locator('button, input, select, textarea').evaluateAll(elements => elements.filter(element => {
         const rect = element.getBoundingClientRect();

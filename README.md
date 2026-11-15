@@ -44,6 +44,8 @@ Click **Login** at the top of the shop, then **Use demo credentials** on the log
 
 LocalStorage saves products, categories, cart items, and orders. SessionStorage keeps the demo admin login and checkout draft.
 
+Product photos support JPG, PNG, or WebP uploads up to 5 MB, or image links. Uploads are resized and saved in this browser too, so many photos can fill its storage.
+
 Use the same browser, profile, and site URL for the shop and admin. Data is not shared across devices, and clearing browser data removes it. The data is editable and the login is simulated, so this setup is for demonstration only. Payments are also simulated.
 
 ## Sample data and reset
@@ -51,6 +53,8 @@ Use the same browser, profile, and site URL for the shop and admin. Data is not 
 The app starts with 16 sample perfumes in 3 categories, including an inactive product and an out-of-stock product. Prices and stock are demo values you can edit in admin.
 
 Shiyaaka Shadow, Shiyaaka Snow, Hawas Ice, and Hawas Kobra also appear in existing saved catalogs without a reset. Saved orders and cart items are kept.
+
+To clear only orders and sales, open **Admin → Overview → Reset orders & sales**. Customer summaries also return to zero. Products, images, prices, stock, categories, and cart are kept.
 
 To start again, open **Admin → Overview → Reset demo data** and confirm. This restores the sample catalog and clears saved orders and cart items. Use fictional customer details for demo orders.
 

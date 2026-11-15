@@ -259,6 +259,7 @@ test('admin category/product CRUD is reflected in the storefront and deletion is
   await page.getByRole('button', { name: 'Save category', exact: true }).click();
   await page.goto('/admin/products/new');
   await page.getByLabel('Product name').fill('Test Fragrance');
+  await page.getByLabel('Or use an image link').fill('/images/products/hawas-ice.webp');
   await page.getByLabel('Category', { exact: false }).selectOption({ label: 'Fresh Sample Edit' });
   await page.getByLabel('Description').fill('A sample fragrance for the browser acceptance check.');
   await page.getByLabel('Price (PHP)').fill('120.50');
@@ -417,4 +418,114 @@ test('malformed saved category images show recovery and preserve data until rese
   await page.getByRole('button', { name: 'Reset demo data', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Discover Your Signature Scent' })).toBeVisible();
   expect(typeof (await read(page)).categories[0].image).toBe('string');
+});
+
+test('admin distinguishes empty browser data from filters hiding a saved guest order', async ({ page, context }) => {
+  await page.setViewportSize({ width: 375, height: 900 });
+  await adminLogin(page, '/admin/orders');
+  await expect(page.getByRole('heading', { name: 'No orders saved in this browser.', exact: true })).toBeVisible();
+  await expect(page.locator('.panel-count')).toContainText('Showing 0 of 0 orders');
+  const guest = await context.newPage();
+  const order = await purchase(guest, 'p-hawas-ice');
+  await expect(page.locator('tbody tr')).toContainText(order.number);
+  await expect(page.locator('tbody .status-badge')).toHaveText('Pending');
+  await expect(page.locator('.panel-count')).toContainText('Showing 1 of 1 order');
+
+  await page.getByLabel('Filter order status').selectOption('Completed');
+  await expect(page.getByRole('heading', { name: 'No orders match your filters.', exact: true })).toBeVisible();
+  await expect(page.locator('.panel-count')).toContainText('Showing 0 of 1 order');
+  await expect(page.getByRole('button', { name: 'Clear filters', exact: true })).toBeInViewport();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
+  await expect(page.locator('tbody tr')).toContainText(order.number);
+  await expect(page.getByLabel('Filter order status')).toHaveValue('');
+
+  await page.getByRole('searchbox', { name: 'Search orders', exact: true }).fill('not-an-order');
+  await expect(page.getByRole('heading', { name: 'No orders match your filters.', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
+  await page.getByRole('button', { name: 'Refresh orders', exact: true }).click();
+  await expect(page.locator('tbody tr')).toContainText(order.number);
+  expect((await read(page)).orders).toHaveLength(1);
+  expect((await read(page)).orders[0].status).toBe('Pending');
+  await guest.close();
+});
+
+test('resetting orders and sales keeps custom catalog, prices, inventory and cart after reload', async ({ page }) => {
+  test.setTimeout(60000);
+  const order = await purchase(page, 'p-9pm', 2);
+  await adminLogin(page, '/admin/orders/' + order.id);
+  for (const status of ['Confirmed', 'Preparing', 'Shipped', 'Completed']) {
+    await page.getByRole('button', { name: 'Mark as ' + status, exact: true }).click();
+    await expect(page.locator('.page-intro .status-badge')).toHaveText(status);
+  }
+  await page.evaluate(async () => {
+    const { store } = await import('/src/services/browserStore.js');
+    const product = store.read().products.find(p => p.id === 'p-9pm');
+    await store.saveProduct({ ...product, name: 'My edited 9PM', price: '2600.50', stock: String(product.stock) }, product.id);
+    await store.saveProduct({ name: 'My Rayhaan Lion', brand: 'Rayhaan', categoryId: 'amber', description: 'A custom fragrance to preserve during the reset.', price: '2250.00', stock: '7', size: '100 ml', active: true, image: '/images/products/rayhaan-lion.webp' });
+    await store.addToCart('p-hawas-ice', 1);
+  });
+  await page.goto('/admin');
+  const before = await read(page);
+  const sales = page.locator('.metric-card').filter({ has: page.getByText('Total Sales', { exact: true }) }).locator('strong');
+  await expect(sales).toHaveText('₱4,900.00');
+  await page.getByRole('button', { name: 'Reset orders & sales', exact: true }).click();
+  const dialog = page.getByRole('dialog');
+  await expect(dialog).toContainText('Your products, images, prices, stock, categories, and cart are kept.');
+  await dialog.getByRole('button', { name: 'Keep orders', exact: true }).click();
+  expect(await read(page)).toEqual(before);
+  await expect(sales).toHaveText('₱4,900.00');
+
+  await page.getByRole('button', { name: 'Reset orders & sales', exact: true }).click();
+  await dialog.getByRole('button', { name: 'Reset orders & sales', exact: true }).click();
+  await expect(dialog).toHaveCount(0);
+  await expect(sales).toHaveText('₱0.00');
+  for (const label of ['Total Orders', 'Pending Orders', 'Completed Orders', 'Total Customers']) {
+    await expect(page.locator('.metric-card').filter({ has: page.getByText(label, { exact: true }) }).locator('strong')).toHaveText('0');
+  }
+  const after = await read(page);
+  expect(after.orders).toEqual([]);
+  expect(after.products).toEqual(before.products);
+  expect(after.categories).toEqual(before.categories);
+  expect(after.cart).toEqual(before.cart);
+  await page.reload();
+  await expect(sales).toHaveText('₱0.00');
+  await expect(page.getByRole('button', { name: 'Reset orders & sales', exact: true })).toBeDisabled();
+  await page.goto('/orders');
+  await expect(page.locator('.customer-order-card')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Your first order starts here.', exact: true })).toBeVisible();
+  await page.goto('/cart');
+  await expect(page.locator('.cart-item')).toContainText('Hawas Ice');
+  await expect(page.getByRole('spinbutton')).toHaveValue('1');
+});
+
+test('failed orders reset keeps history and sales and permits retry', async ({ page }) => {
+  const order = await purchase(page);
+  await page.evaluate(async orderId => {
+    const { store } = await import('/src/services/browserStore.js');
+    for (const status of ['Confirmed', 'Preparing', 'Shipped', 'Completed']) await store.transitionOrder(orderId, status);
+  }, order.id);
+  await adminLogin(page);
+  const before = await read(page);
+  await page.evaluate(key => {
+    const original = Storage.prototype.setItem;
+    window.restoreResetStorage = () => { Storage.prototype.setItem = original; };
+    Storage.prototype.setItem = function (name, value) {
+      if (name === key) throw new DOMException('Test storage failure', 'QuotaExceededError');
+      return original.call(this, name, value);
+    };
+  }, key);
+  await page.getByRole('button', { name: 'Reset orders & sales', exact: true }).click();
+  const dialog = page.getByRole('dialog');
+  await dialog.getByRole('button', { name: 'Reset orders & sales', exact: true }).click();
+  await expect(dialog.getByRole('alert')).toContainText('could not save');
+  expect(await read(page)).toEqual(before);
+  const sales = page.locator('.metric-card').filter({ has: page.getByText('Total Sales', { exact: true }) }).locator('strong');
+  await expect(sales).toHaveText('₱2,450.00');
+  await page.evaluate(() => window.restoreResetStorage());
+  await dialog.getByRole('button', { name: 'Reset orders & sales', exact: true }).click();
+  await expect(dialog).toHaveCount(0);
+  await expect(sales).toHaveText('₱0.00');
+  expect((await read(page)).orders).toEqual([]);
+  expect((await read(page)).products).toEqual(before.products);
 });

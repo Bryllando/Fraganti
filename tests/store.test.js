@@ -383,3 +383,76 @@ test('older data with missing optional display fields still loads', async () => 
   fixture.setRaw(JSON.stringify(data));
   assert.equal(fixture.store.read().orders.length, 1);
 });
+
+test('uploaded product photos persist and order snapshots retain the purchased image', async () => {
+  const { store, recreate } = setup();
+  const p = store.read().products.find(p => p.id === 'p-9pm');
+  const image = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/X9sAAAAASUVORK5CYII=';
+  await store.saveProduct(productInput(p, { image }), p.id);
+  assert.equal(recreate().read().products.find(product => product.id === p.id).image, image);
+  const order = await purchase(store);
+  const latest = store.read().products.find(product => product.id === p.id);
+  await store.saveProduct(productInput(latest, { image: '/images/products/hawas-ice.webp' }), p.id);
+  assert.equal(recreate().read().orders.find(saved => saved.id === order.id).items[0].image, image);
+});
+
+test('product photos reject unsafe, malformed or oversized data without changing saved products', async () => {
+  const { store } = setup();
+  const before = store.read();
+  const p = before.products[0];
+  const invalid = [
+    'data:image/svg+xml;base64,PHN2Zy8+',
+    'data:text/html;base64,PHNjcmlwdD4=',
+    'data:image/png;base64,',
+    'data:image/png;base64,not-valid-base64!',
+    'data:image/png;base64,abc',
+    'data:image/png;base64,' + 'a'.repeat(500000),
+    'blob:https://example.com/photo',
+  ];
+  for (const image of invalid) {
+    await assert.rejects(store.saveProduct(productInput(p, { image }), p.id), /Upload a JPG, PNG or WebP/);
+  }
+  assert.deepEqual(store.read(), before);
+  const largeValidImage = 'data:image/webp;base64,' + 'a'.repeat(400000);
+  await store.saveProduct(productInput(p, { image: largeValidImage }), p.id);
+  assert.equal(store.read().products[0].image, largeValidImage);
+});
+
+test('orders-only reset clears history and derived totals while preserving catalog, stock and cart', async () => {
+  const { store, recreate } = setup();
+  const completed = await purchase(store, undefined, 'p-9pm', 2);
+  for (const status of ['Confirmed', 'Preparing', 'Shipped', 'Completed']) await store.transitionOrder(completed.id, status);
+  await purchase(store, 'other@example.com', 'p-hawas');
+  const cancelled = await purchase(store, undefined, 'p-cedar');
+  await store.transitionOrder(cancelled.id, 'Cancelled');
+  await store.saveCategory({ name: 'My collection' });
+  const category = store.read().categories.find(c => c.name === 'My collection');
+  const original = store.read().products.find(p => p.id === 'p-9pm');
+  await store.saveProduct(productInput(original, { name: 'My edited perfume', price: '2600.50' }), original.id);
+  const image = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/X9sAAAAASUVORK5CYII=';
+  await store.saveProduct(productInput(original, { name: 'Custom Rayhaan Lion', price: '2250.00', categoryId: category.id, image }));
+  await store.addToCart('p-hawas-ice', 1);
+  const before = store.read();
+  assert.equal(dashboardStats(before).sales, 490000);
+
+  await store.resetOrders();
+  const after = recreate().read();
+  assert.deepEqual(after, { ...before, orders: [], revision: before.revision + 1 });
+  assert.deepEqual(dashboardStats(after), { products: before.products.length, orders: 0, pending: 0, completed: 0, customers: 0, sales: 0 });
+  assert.deepEqual(customerSummary(after.orders), []);
+  await store.resetOrders();
+  assert.deepEqual(recreate().read().products, before.products);
+  assert.deepEqual(recreate().read().cart, before.cart);
+});
+
+test('failed orders-only reset preserves saved history, sales and all other data', async () => {
+  const fixture = setup();
+  const completed = await purchase(fixture.store);
+  for (const status of ['Confirmed', 'Preparing', 'Shipped', 'Completed']) await fixture.store.transitionOrder(completed.id, status);
+  await fixture.store.addToCart('p-hawas');
+  const before = fixture.store.read();
+  fixture.setFail(true);
+  await assert.rejects(fixture.store.resetOrders(), error => error.code === 'STORAGE');
+  assert.deepEqual(fixture.recreate().read(), before);
+  assert.equal(dashboardStats(fixture.store.read()).sales, 245000);
+});

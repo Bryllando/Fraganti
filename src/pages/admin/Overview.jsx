@@ -9,9 +9,31 @@ import OrdersTable from '../../components/OrdersTable.jsx';
 
 export default function Overview() {
   const { state, notify } = useStore();
-  const [reset, setReset] = useState(false);
+  const [reset, setReset] = useState(null);
   const stats = dashboardStats(state);
   const cards = [['Total Products', stats.products, 'box-seam', 'All products, including inactive'], ['Total Orders', stats.orders, 'bag-check', 'All orders, including cancelled'], ['Pending Orders', stats.pending, 'hourglass-split', 'Waiting for confirmation'], ['Completed Orders', stats.completed, 'check2-circle', 'A complete scent journey'], ['Total Customers', stats.customers, 'people', 'Unique normalized email addresses'], ['Total Sales', money(stats.sales), 'graph-up-arrow', 'Completed orders only']];
   const lowStock = state.products.filter(p => p.active && p.stock < 10);
-  return <><PageIntro eyebrow="YOUR BOUTIQUE AT A GLANCE" title="A little overview.">Welcome back. Here’s how your collection is doing.</PageIntro><div className="row g-3 metric-grid">{cards.map(([label, value, icon, caption]) => <div className="col-sm-6 col-xl-4" key={label}><div className="metric-card"><div><span>{label}</span><Icon name={icon}/></div><strong>{value}</strong><small>{caption}</small></div></div>)}</div><section className="admin-panel mt-4"><div className="panel-heading"><div><h2>Recent orders</h2><p>The latest additions to your story.</p></div><Link className="text-link" to="/admin/orders">View all <Icon name="arrow-right"/></Link></div>{state.orders.length ? <OrdersTable orders={state.orders.slice(0, 5)}/> : <EmptyState icon="bag-check" title="Your first order starts a story."><p>Place a demo order in the storefront to see it here.</p><Link className="btn btn-outline-dark" to="/shop">Visit the storefront <Icon name="arrow-up-right"/></Link></EmptyState>}</section><div className="row g-4 mt-0"><div className="col-lg-7"><section className="admin-panel p-4 h-100"><p className="eyebrow">COLLECTION CARE</p><h2>Worth a little attention.</h2><p className="text-muted">{lowStock.length} active fragrance{lowStock.length === 1 ? '' : 's'} with fewer than 10 bottles.</p>{lowStock.slice(0, 4).map(p => <div className="low-stock-row" key={p.id}><Link to={`/admin/products/${p.id}/edit`}>{p.name}</Link><span className={p.stock === 0 ? 'field-error' : ''}>{p.stock === 0 ? 'Out of stock' : `${p.stock} remaining`}</span></div>)}</section></div><div className="col-lg-5"><section className="admin-panel p-4 h-100"><p className="eyebrow">DEMO WORKSPACE</p><h2>A fresh start.</h2><p className="text-muted">Restore the 16 sample perfumes and three scent families. This removes all demo orders and cart contents.</p><button className="btn btn-outline-dark" onClick={() => setReset(true)}><Icon name="arrow-counterclockwise"/> Reset demo data</button></section></div></div><Alert type="info">Demo only. Products and orders are shared with the storefront in this browser profile. Simulated login does not provide production security.</Alert>{reset && <ConfirmDialog title="Start fresh?" confirmLabel="Reset demo data" onClose={() => setReset(false)} onConfirm={async () => { await store.reset(); notify('Demo data restored.'); }}><p>This replaces all products and categories, deletes every demo order, and empties the cart. The demo login remains active.</p></ConfirmDialog>}</>;
+  return <><PageIntro eyebrow="YOUR BOUTIQUE AT A GLANCE" title="A little overview.">Welcome back. Here’s how your collection is doing.</PageIntro><div className="row g-3 metric-grid">{cards.map(([label, value, icon, caption]) => <div className="col-sm-6 col-xl-4" key={label}><div className="metric-card"><div><span>{label}</span><Icon name={icon}/></div><strong>{value}</strong><small>{caption}</small></div></div>)}</div><section className="admin-panel mt-4"><div className="panel-heading"><div><h2>Recent orders</h2><p>The latest additions to your story.</p></div><Link className="text-link" to="/admin/orders">View all <Icon name="arrow-right"/></Link></div>{state.orders.length ? <OrdersTable orders={state.orders.slice(0, 5)}/> : <EmptyState icon="bag-check" title="Your first order starts a story."><p>Place a demo order in the storefront to see it here.</p><Link className="btn btn-outline-dark" to="/shop">Visit the storefront <Icon name="arrow-up-right"/></Link></EmptyState>}</section><div className="row g-4 mt-0"><div className="col-lg-7"><section className="admin-panel p-4 h-100"><p className="eyebrow">COLLECTION CARE</p><h2>Worth a little attention.</h2><p className="text-muted">{lowStock.length} active fragrance{lowStock.length === 1 ? '' : 's'} with fewer than 10 bottles.</p>{lowStock.slice(0, 4).map(p => <div className="low-stock-row" key={p.id}><Link to={`/admin/products/${p.id}/edit`}>{p.name}</Link><span className={p.stock === 0 ? 'field-error' : ''}>{p.stock === 0 ? 'Out of stock' : `${p.stock} remaining`}</span></div>)}</section></div><div className="col-lg-5"><section className="admin-panel p-4 h-100"><p className="eyebrow">DEMO WORKSPACE</p><h2>A fresh start.</h2><p className="text-muted">Clear order history and start sales at zero. Your catalog, current stock, and cart are kept.</p>
+<button className="btn btn-outline-dark" disabled={!state.orders.length} onClick={() => setReset('orders')}><Icon name="arrow-counterclockwise"/> Reset orders &amp; sales</button>
+<hr className="my-4"/>
+<p className="form-text">For a full reset, restore the 16 sample perfumes and three categories. This also removes custom products, orders, and cart contents.</p>
+<button className="btn btn-outline-dark" onClick={() => setReset('all')}>Reset demo data</button></section></div></div><Alert type="info">Demo only. Products and orders are shared with the storefront in this browser profile. Simulated login does not provide production security.</Alert>{reset && <ConfirmDialog
+    title={reset === 'orders' ? 'Reset orders and sales?' : 'Start fresh?'}
+    confirmLabel={reset === 'orders' ? 'Reset orders & sales' : 'Reset demo data'}
+    dismissLabel={reset === 'orders' ? 'Keep orders' : 'Keep it'}
+    onClose={() => setReset(null)}
+    onConfirm={async () => {
+      if (reset === 'orders') {
+        await store.resetOrders();
+        notify('Order history cleared. Total sales is now ₱0.00.');
+      } else {
+        await store.reset();
+        notify('Demo data restored.');
+      }
+    }}
+  >
+    {reset === 'orders'
+      ? <><p>This deletes all saved orders and resets sales and customer summaries to zero.</p><p>Your products, images, prices, stock, categories, and cart are kept.</p></>
+      : <p>This replaces all products and categories, deletes every demo order, and empties the cart. The demo login remains active.</p>}
+  </ConfirmDialog>}</>;
 }

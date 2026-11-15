@@ -1,5 +1,6 @@
 import { CATALOG_VERSION, createSeed, NEW_PRODUCTS, SEED_CATEGORIES } from '../data/seed.js';
 import { money, normalizeEmail, orderTotal, parsePrice } from '../utils/format.js';
+import { isUploadedProductImage } from '../utils/productImage.js';
 
 export const STORAGE_KEY = 'oud-aura:store:v1';
 export const PAYMENT_METHODS = ['Cash on Delivery', 'E-Wallet', 'Bank Transfer'];
@@ -141,6 +142,9 @@ export function createStore(storage, { lock = null, now = () => new Date().toISO
       const run = () => { write(createSeed()); };
       return lock ? lock(run) : run();
     },
+    async resetOrders() {
+      return mutate(state => { state.orders = []; });
+    },
     async addToCart(productId, quantity = 1) {
       return mutate(state => {
         const p = state.products.find(p => p.id === productId);
@@ -222,7 +226,7 @@ export function createStore(storage, { lock = null, now = () => new Date().toISO
         const stockText = String(input.stock).trim();
         assert(name, 'A product name is required.');
         assert(description, 'A description is required.');
-        assert(image && (/^https?:\/\/[^\s]+$/.test(image) || /^\/(?!\/)[^\s]+$/.test(image)), 'Use an https:// image URL or a bundled path starting with /.');
+        assert(image && (isUploadedProductImage(image) || /^https?:\/\/[^\s]+$/.test(image) || /^\/(?!\/)[^\s]+$/.test(image)), 'Upload a JPG, PNG or WebP photo, or use an image URL or a path starting with /.');
         assert(state.categories.some(c => c.id === input.categoryId), 'Choose an existing category.');
         assert(Number.isSafeInteger(price) && price > 0 && price <= 100000000, 'Enter a positive price with up to two decimal places (maximum PHP 1,000,000).');
         assert(/^\d+$/.test(stockText) && Number.isSafeInteger(Number(stockText)) && Number(stockText) <= 1000000, 'Stock must be a whole number from 0 to 1,000,000.');

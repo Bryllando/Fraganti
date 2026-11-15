@@ -98,7 +98,7 @@ test('new perfume cards and images fit mobile, tablet and desktop screens', asyn
     await expect.poll(() => section.locator('img').evaluateAll(images => images.length === 4 && images.every(image => image.complete && image.naturalWidth > 0))).toBe(true);
     const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: innerWidth }));
     expect(dimensions.page).toBeLessThanOrEqual(dimensions.viewport);
-    await section.screenshot({ path: 'docs/screenshots/new-fragrances-' + width + '.png', animations: 'disabled' });
+    await section.screenshot({ path: 'test-results/screenshots/new-fragrances-' + width + '.png', animations: 'disabled' });
   }
   expect(errors).toEqual([]);
 });

@@ -6,6 +6,10 @@ import { PAYMENT_METHODS, quoteCart, validateCustomer } from '../services/store.
 import { Alert, EmptyState, Icon, PageIntro } from '../components/UI.jsx';
 import OrderSummary from '../components/OrderSummary.jsx';
 import ShoppingSteps from '../components/ShoppingSteps.jsx';
+import personIcon from 'bootstrap-icons/icons/person.svg';
+import emailIcon from 'bootstrap-icons/icons/envelope.svg';
+import phoneIcon from 'bootstrap-icons/icons/telephone.svg';
+import addressIcon from 'bootstrap-icons/icons/geo-alt.svg';
 
 const DRAFT_KEY = 'oud-aura:checkout-draft';
 const emptyForm = { name: '', email: '', phone: '', address: '', paymentMethod: '', notes: '' };
@@ -65,7 +69,7 @@ export default function Checkout() {
       return;
     }
     setBusy(true);
-    try {
+        try {
       const order = await store.placeOrder(values, reviewed, buyNow);
       try { sessionStorage.removeItem(DRAFT_KEY); } catch { /* The order is already saved. */ }
       setSavedId(order.id);
@@ -81,12 +85,36 @@ export default function Checkout() {
     } finally { setBusy(false); }
   }
 
-  function field(name, label, type = 'text', autoComplete = '') {
-    return <div className="col-md-6">
-      <label htmlFor={'checkout-' + name} className="form-label">{label} <span aria-hidden="true">*</span></label>
-      <input className={'form-control ' + (errors[name] ? 'is-invalid' : '')} id={'checkout-' + name} name={name} type={type} autoComplete={autoComplete} value={values[name]} onChange={update} required maxLength={name === 'name' ? 150 : 254} aria-invalid={Boolean(errors[name])} aria-describedby={errors[name] ? name + '-error' : undefined}/>
-      {errors[name] && <div className="invalid-feedback" id={name + '-error'}>{errors[name]}</div>}
-    </div>;
+  function field({ name, label, type, autoComplete, placeholder, icon }) {
+    return (
+      <div className="col-md-6">
+        <label htmlFor={'checkout-' + name} className="form-label">
+          {label} <span aria-hidden="true">*</span>
+        </label>
+        <div className="checkout-field-control">
+          <img className="checkout-field-icon" src={icon} alt="" aria-hidden="true"/>
+          <input
+            className={'form-control ' + (errors[name] ? 'is-invalid' : '')}
+            id={'checkout-' + name}
+            name={name}
+            type={type}
+            autoComplete={autoComplete}
+            placeholder={placeholder}
+            value={values[name]}
+            onChange={update}
+            required
+            maxLength={name === 'name' ? 150 : 254}
+            aria-invalid={Boolean(errors[name])}
+            aria-describedby={errors[name] ? name + '-error' : undefined}
+          />
+        </div>
+        {errors[name] && (
+          <div className="invalid-feedback d-block" id={name + '-error'}>
+            {errors[name]}
+          </div>
+        )}
+      </div>
+    );
   }
 
   return <div className="container page-space">
@@ -105,13 +133,50 @@ export default function Checkout() {
             <section className="checkout-section">
               <div className="form-section-heading"><span>01</span><h2>Delivery details</h2></div>
               <div className="row g-3">
-                {field('name', 'Customer Full Name', 'text', 'name')}
-                {field('email', 'Email Address', 'email', 'email')}
-                {field('phone', 'Contact Number', 'tel', 'tel')}
+                {field({
+                  name: 'name',
+                  label: 'Customer Full Name',
+                  type: 'text',
+                  autoComplete: 'name',
+                  placeholder: 'e.g. Maya Sample',
+                  icon: personIcon,
+                })}
+                {field({
+                  name: 'email',
+                  label: 'Email Address',
+                  type: 'email',
+                  autoComplete: 'email',
+                  placeholder: 'e.g. maya@example.com',
+                  icon: emailIcon,
+                })}
+                {field({
+                  name: 'phone',
+                  label: 'Contact Number',
+                  type: 'tel',
+                  autoComplete: 'tel',
+                  placeholder: 'e.g. 0900 000 0123',
+                  icon: phoneIcon,
+                })}
                 <div className="col-12">
                   <label className="form-label" htmlFor="checkout-address">Delivery Address <span aria-hidden="true">*</span></label>
-                  <textarea className={'form-control ' + (errors.address ? 'is-invalid' : '')} id="checkout-address" name="address" rows="3" autoComplete="street-address" value={values.address} onChange={update} required maxLength="1000" aria-invalid={Boolean(errors.address)} aria-describedby={errors.address ? 'address-error' : undefined}/>
-                  {errors.address && <div className="invalid-feedback" id="address-error">{errors.address}</div>}
+                  <div className="checkout-field-control checkout-field-control--address">
+                    <img className="checkout-field-icon" src={addressIcon} alt="" aria-hidden="true"/>
+                    <textarea
+                      className={'form-control ' + (errors.address ? 'is-invalid' : '')}
+                      id="checkout-address"
+                      name="address"
+                      rows="3"
+                      autoComplete="street-address"
+                      placeholder="House or unit, street, barangay, city, province"
+                      value={values.address}
+                      onChange={update}
+                      required
+                      maxLength="1000"
+                      aria-invalid={Boolean(errors.address)}
+                      aria-describedby={errors.address ? 'address-error' : undefined}
+                    />
+                  </div>
+                  {errors.address && <div className="invalid-feedback d-block" id="address-error">{errors.address}</div>}
                 </div>
               </div>
             </section>
