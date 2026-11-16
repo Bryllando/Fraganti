@@ -1,0 +1,4034 @@
+{
+  "project": "OUD & AURA",
+  "capturedAt": "2026-11-16T13:26:54.135Z",
+  "timezone": "Asia/Taipei",
+  "stack": "React / Vite / LocalStorage",
+  "baseURL": "http://127.0.0.1:5174",
+  "widths": [
+    1280,
+    375
+  ],
+  "viewportHeight": 900,
+  "reducedMotion": "reduce",
+  "captureMethod": "Playwright Chromium native viewport PNG screenshots, scrolled to the relevant content; no image editing or CSS overrides.",
+  "dataIsolation": "New nonpersistent browser context; fictional data only. No existing browser profile was opened.",
+  "runtimeExceptions": [],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "pages": [
+    {
+      "filename": "1280-home.png",
+      "description": "Branding, hero banner, category navigation and featured products",
+      "route": "/",
+      "capturedAt": "2026-11-16T13:26:58.649Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 4192,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/hero.png",
+          "alt": "Original editorial image of Arabian-inspired fragrance bottles on warm travertine plinths",
+          "decorative": false,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "displayedWidth": 615
+        },
+        {
+          "src": "/images/hero.png",
+          "alt": "Warm light falling across artisan-inspired sample fragrance bottles",
+          "decorative": false,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "displayedWidth": 560
+        },
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "Fresh & Aquatic — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        },
+        {
+          "label": "Sweet & Amber — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        },
+        {
+          "label": "Woody & Oud — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        },
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Discover YourSignature Scent"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 638910,
+        "sha256": "927fd8ce205745f125bba412f084d790f8ba1409e2cf34dc1bfc0d294a4c8ead"
+      }
+    },
+    {
+      "filename": "375-home.png",
+      "description": "Branding, hero banner, category navigation and featured products",
+      "route": "/",
+      "capturedAt": "2026-11-16T13:26:59.313Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 6342,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/hero.png",
+          "alt": "Original editorial image of Arabian-inspired fragrance bottles on warm travertine plinths",
+          "decorative": false,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "displayedWidth": 327
+        },
+        {
+          "src": "/images/hero.png",
+          "alt": "Warm light falling across artisan-inspired sample fragrance bottles",
+          "decorative": false,
+          "naturalWidth": 1536,
+          "naturalHeight": 1024,
+          "displayedWidth": 327
+        },
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "Fresh & Aquatic — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 327
+        },
+        {
+          "label": "Sweet & Amber — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 327
+        },
+        {
+          "label": "Woody & Oud — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 327
+        },
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Discover YourSignature Scent"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 230774,
+        "sha256": "6a44e23f4cded1fa1184d7f3afe1313f17e6ab43f2b9621ab000e0ec98caa35f"
+      }
+    },
+    {
+      "filename": "1280-products.png",
+      "description": "Product grid, search, filters, price sorting and product availability",
+      "route": "/shop",
+      "capturedAt": "2026-11-16T13:27:00.092Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 2991,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "product-search",
+          "type": "search",
+          "label": "Search fragrances"
+        },
+        {
+          "tag": "select",
+          "id": "category-filter",
+          "type": "select-one",
+          "label": "Category"
+        },
+        {
+          "tag": "select",
+          "id": "price-sort",
+          "type": "select-one",
+          "label": "Sort by"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 282
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Oud Al Sahra — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Spectre Sandal — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        },
+        {
+          "label": "Cedar & Saffron — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 282
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Find a little of yourself."
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 336429,
+        "sha256": "855bfaa0f111f50691f635b171bf1a28c7d001877d26378afa0980597c364383"
+      }
+    },
+    {
+      "filename": "375-products.png",
+      "description": "Product grid, search, filters, price sorting and product availability",
+      "route": "/shop",
+      "capturedAt": "2026-11-16T13:27:00.601Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 4983,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "product-search",
+          "type": "search",
+          "label": "Search fragrances"
+        },
+        {
+          "tag": "select",
+          "id": "category-filter",
+          "type": "select-one",
+          "label": "Category"
+        },
+        {
+          "tag": "select",
+          "id": "price-sort",
+          "type": "select-one",
+          "label": "Sort by"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Oud Al Sahra — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Spectre Sandal — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Cedar & Saffron — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Find a little of yourself.",
+          "9PM After Hours",
+          "Hawas Azure"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 86370,
+        "sha256": "b35edb52e93fb978fd2739e22ad4d92d12024e45aea79d0d24aecb0e95cbeec2"
+      }
+    },
+    {
+      "filename": "1280-product.png",
+      "description": "Available product, scent information, stock, quantity and related items",
+      "route": "/product/p-9pm",
+      "capturedAt": "2026-11-16T13:27:01.309Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 2296,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for 9PM After Hours"
+        }
+      ],
+      "images": [],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 576
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "9PM After Hours",
+          "The fragrance, unfolded."
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 228383,
+        "sha256": "0010b366ba2d19599b10c33a58d22878b0d86d82caa6e770a71e144723b0eb53"
+      }
+    },
+    {
+      "filename": "375-product.png",
+      "description": "Available product, scent information, stock, quantity and related items",
+      "route": "/product/p-9pm",
+      "capturedAt": "2026-11-16T13:27:01.529Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 3105,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for 9PM After Hours"
+        }
+      ],
+      "images": [],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 327
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 532,
+        "horizontalTables": [],
+        "headings": [
+          "9PM After Hours",
+          "The fragrance, unfolded."
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 47017,
+        "sha256": "bdc1dfff55735427167361a9d1de4420fa39f6dcc82cc7bd0d5439df9ebfa6ac"
+      }
+    },
+    {
+      "filename": "1280-zero-stock.png",
+      "description": "Visible active zero-stock product with purchasing disabled",
+      "route": "/product/p-turathi",
+      "capturedAt": "2026-11-16T13:27:02.421Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 2296,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for Turathi Blue Horizon"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 384
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 576
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 384
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Turathi Blue Horizon",
+          "The fragrance, unfolded."
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 284838,
+        "sha256": "685788f45c1877e7b55ab4ca831ac0347a4153c8d80515d04586e62f6c29b488"
+      }
+    },
+    {
+      "filename": "375-zero-stock.png",
+      "description": "Visible active zero-stock product with purchasing disabled",
+      "route": "/product/p-turathi",
+      "capturedAt": "2026-11-16T13:27:02.733Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 3128,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for Turathi Blue Horizon"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 152
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 327
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 152
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 532,
+        "horizontalTables": [],
+        "headings": [
+          "Turathi Blue Horizon",
+          "The fragrance, unfolded."
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 46965,
+        "sha256": "751a489107168f451f5eeda3f803d959844aa83442b93dd63f899e66be0fd49c"
+      }
+    },
+    {
+      "filename": "1280-empty-cart.png",
+      "description": "Empty cart with a useful shopping action",
+      "route": "/cart",
+      "capturedAt": "2026-11-16T13:27:03.244Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1260,
+      "controls": [],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Shopping Cart",
+          "Your cart is empty."
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 53061,
+        "sha256": "36ed52c918dae2f85829415092421d8fb1324530059b4c4ad7536c1ea2761aeb"
+      }
+    },
+    {
+      "filename": "375-empty-cart.png",
+      "description": "Empty cart with a useful shopping action",
+      "route": "/cart",
+      "capturedAt": "2026-11-16T13:27:03.381Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 1443,
+      "controls": [],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Shopping Cart",
+          "Your cart is empty."
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 43425,
+        "sha256": "9ad707296b094f4ddf35e2a21cf0f4d3e0a8bea6b528019c4be40dc555899e0a"
+      }
+    },
+    {
+      "filename": "1280-cart.png",
+      "description": "Two product lines, merged quantity of two and exact PHP 325.50 total",
+      "route": "/cart",
+      "capturedAt": "2026-11-16T13:27:04.994Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1319,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select all (2 fragrances)"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select 9PM After Hours"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for 9PM After Hours"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select Hawas Ice"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for Hawas Ice"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 80
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 80
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Shopping Cart",
+          "Order summary"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 95153,
+        "sha256": "5a1f082a6e5cc154b494844c242e8d961d1984bdd36d1a59bdc9c31d6d11652d"
+      }
+    },
+    {
+      "filename": "375-cart.png",
+      "description": "Two product lines, merged quantity of two and exact PHP 325.50 total",
+      "route": "/cart",
+      "capturedAt": "2026-11-16T13:27:05.298Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2090,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select all (2 fragrances)"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select 9PM After Hours"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for 9PM After Hours"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select Hawas Ice"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for Hawas Ice"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 64
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 64
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 348,
+        "horizontalTables": [],
+        "headings": [
+          "Order summary"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 45193,
+        "sha256": "3c23a31bd9c06dc6869e408c5c339d571a2eafb4fde50cd896fa61a5e82e02f6"
+      }
+    },
+    {
+      "filename": "375-cart-summary.png",
+      "description": "Selected bottle count, exact PHP 325.50 total and Checkout action",
+      "route": "/cart",
+      "capturedAt": "2026-11-16T13:27:05.419Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2090,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select all (2 fragrances)"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select 9PM After Hours"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for 9PM After Hours"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "label": "Select Hawas Ice"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "number",
+          "label": "Quantity for Hawas Ice"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 64
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 64
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 937,
+        "horizontalTables": [],
+        "headings": [
+          "Order summary",
+          "Explore",
+          "Say hello"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 44523,
+        "sha256": "b3682bf0ba77084a6eaac915351ff78110682eb19d4cf8c8b13a254eec02a6f2"
+      }
+    },
+    {
+      "filename": "1280-checkout.png",
+      "description": "Populated guest delivery details, simulated COD and PHP 325.50 order review",
+      "route": "/checkout",
+      "capturedAt": "2026-11-16T13:27:06.289Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1898,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "checkout-name",
+          "type": "text",
+          "label": "Customer Full Name *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-email",
+          "type": "email",
+          "label": "Email Address *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-phone",
+          "type": "tel",
+          "label": "Contact Number *"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-address",
+          "type": "textarea",
+          "label": "Delivery Address *"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Cash on DeliverySimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "E-WalletSimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Bank TransferSimulated selection only"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-notes",
+          "type": "textarea",
+          "label": "Order Notes (optional)"
+        }
+      ],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-envelope'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M0%204a2%202%200%200%201%202-2h12a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H2a2%202%200%200%201-2-2zm2-1a1%201%200%200%200-1%201v.217l7%204.2%207-4.2V4a1%201%200%200%200-1-1zm13%202.383-4.708%202.825L15%2011.105zm-.034%206.876-5.64-3.471L8%209.583l-1.326-.795-5.64%203.47A1%201%200%200%200%202%2013h12a1%201%200%200%200%20.966-.741M1%2011.105l4.708-2.897L1%205.383z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-telephone'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M3.654%201.328a.678.678%200%200%200-1.015-.063L1.605%202.3c-.483.484-.661%201.169-.45%201.77a17.6%2017.6%200%200%200%204.168%206.608%2017.6%2017.6%200%200%200%206.608%204.168c.601.211%201.286.033%201.77-.45l1.034-1.034a.678.678%200%200%200-.063-1.015l-2.307-1.794a.68.68%200%200%200-.58-.122l-2.19.547a1.75%201.75%200%200%201-1.657-.459L5.482%208.062a1.75%201.75%200%200%201-.46-1.657l.548-2.19a.68.68%200%200%200-.122-.58zM1.884.511a1.745%201.745%200%200%201%202.612.163L6.29%202.98c.329.423.445.974.315%201.494l-.547%202.19a.68.68%200%200%200%20.178.643l2.457%202.457a.68.68%200%200%200%20.644.178l2.189-.547a1.75%201.75%200%200%201%201.494.315l2.306%201.794c.829.645.905%201.87.163%202.611l-1.034%201.034c-.74.74-1.846%201.065-2.877.702a18.6%2018.6%200%200%201-7.01-4.42%2018.6%2018.6%200%200%201-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-geo-alt'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A32%2032%200%200%201%208%2014.58a32%2032%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010'/%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204m0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 48
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 48
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 487,
+        "horizontalTables": [],
+        "headings": [
+          "Delivery details",
+          "Payment method",
+          "Order summary"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 80646,
+        "sha256": "7bb56f9319241dbaa9adda5eec7461f01701091b84f73d2b6a7a7f7ed9ba6e2a"
+      }
+    },
+    {
+      "filename": "375-checkout.png",
+      "description": "Populated guest delivery details, simulated COD and PHP 325.50 order review",
+      "route": "/checkout",
+      "capturedAt": "2026-11-16T13:27:06.729Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2818,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "checkout-name",
+          "type": "text",
+          "label": "Customer Full Name *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-email",
+          "type": "email",
+          "label": "Email Address *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-phone",
+          "type": "tel",
+          "label": "Contact Number *"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-address",
+          "type": "textarea",
+          "label": "Delivery Address *"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Cash on DeliverySimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "E-WalletSimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Bank TransferSimulated selection only"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-notes",
+          "type": "textarea",
+          "label": "Order Notes (optional)"
+        }
+      ],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-envelope'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M0%204a2%202%200%200%201%202-2h12a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H2a2%202%200%200%201-2-2zm2-1a1%201%200%200%200-1%201v.217l7%204.2%207-4.2V4a1%201%200%200%200-1-1zm13%202.383-4.708%202.825L15%2011.105zm-.034%206.876-5.64-3.471L8%209.583l-1.326-.795-5.64%203.47A1%201%200%200%200%202%2013h12a1%201%200%200%200%20.966-.741M1%2011.105l4.708-2.897L1%205.383z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-telephone'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M3.654%201.328a.678.678%200%200%200-1.015-.063L1.605%202.3c-.483.484-.661%201.169-.45%201.77a17.6%2017.6%200%200%200%204.168%206.608%2017.6%2017.6%200%200%200%206.608%204.168c.601.211%201.286.033%201.77-.45l1.034-1.034a.678.678%200%200%200-.063-1.015l-2.307-1.794a.68.68%200%200%200-.58-.122l-2.19.547a1.75%201.75%200%200%201-1.657-.459L5.482%208.062a1.75%201.75%200%200%201-.46-1.657l.548-2.19a.68.68%200%200%200-.122-.58zM1.884.511a1.745%201.745%200%200%201%202.612.163L6.29%202.98c.329.423.445.974.315%201.494l-.547%202.19a.68.68%200%200%200%20.178.643l2.457%202.457a.68.68%200%200%200%20.644.178l2.189-.547a1.75%201.75%200%200%201%201.494.315l2.306%201.794c.829.645.905%201.87.163%202.611l-1.034%201.034c-.74.74-1.846%201.065-2.877.702a18.6%2018.6%200%200%201-7.01-4.42%2018.6%2018.6%200%200%201-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-geo-alt'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A32%2032%200%200%201%208%2014.58a32%2032%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010'/%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204m0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 40
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 40
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 442,
+        "horizontalTables": [],
+        "headings": [
+          "Delivery details",
+          "Payment method"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 44456,
+        "sha256": "a4a888fc46e4bca2a0e9322b616fe2d5956f3c33c9db8f9b0df1e29c830d94e6"
+      }
+    },
+    {
+      "filename": "375-checkout-payment.png",
+      "description": "Simulated payment options and optional order notes",
+      "route": "/checkout",
+      "capturedAt": "2026-11-16T13:27:06.831Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2818,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "checkout-name",
+          "type": "text",
+          "label": "Customer Full Name *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-email",
+          "type": "email",
+          "label": "Email Address *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-phone",
+          "type": "tel",
+          "label": "Contact Number *"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-address",
+          "type": "textarea",
+          "label": "Delivery Address *"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Cash on DeliverySimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "E-WalletSimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Bank TransferSimulated selection only"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-notes",
+          "type": "textarea",
+          "label": "Order Notes (optional)"
+        }
+      ],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-envelope'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M0%204a2%202%200%200%201%202-2h12a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H2a2%202%200%200%201-2-2zm2-1a1%201%200%200%200-1%201v.217l7%204.2%207-4.2V4a1%201%200%200%200-1-1zm13%202.383-4.708%202.825L15%2011.105zm-.034%206.876-5.64-3.471L8%209.583l-1.326-.795-5.64%203.47A1%201%200%200%200%202%2013h12a1%201%200%200%200%20.966-.741M1%2011.105l4.708-2.897L1%205.383z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-telephone'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M3.654%201.328a.678.678%200%200%200-1.015-.063L1.605%202.3c-.483.484-.661%201.169-.45%201.77a17.6%2017.6%200%200%200%204.168%206.608%2017.6%2017.6%200%200%200%206.608%204.168c.601.211%201.286.033%201.77-.45l1.034-1.034a.678.678%200%200%200-.063-1.015l-2.307-1.794a.68.68%200%200%200-.58-.122l-2.19.547a1.75%201.75%200%200%201-1.657-.459L5.482%208.062a1.75%201.75%200%200%201-.46-1.657l.548-2.19a.68.68%200%200%200-.122-.58zM1.884.511a1.745%201.745%200%200%201%202.612.163L6.29%202.98c.329.423.445.974.315%201.494l-.547%202.19a.68.68%200%200%200%20.178.643l2.457%202.457a.68.68%200%200%200%20.644.178l2.189-.547a1.75%201.75%200%200%201%201.494.315l2.306%201.794c.829.645.905%201.87.163%202.611l-1.034%201.034c-.74.74-1.846%201.065-2.877.702a18.6%2018.6%200%200%201-7.01-4.42%2018.6%2018.6%200%200%201-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-geo-alt'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A32%2032%200%200%201%208%2014.58a32%2032%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010'/%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204m0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 40
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 40
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 1016,
+        "horizontalTables": [],
+        "headings": [
+          "Order summary"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 41465,
+        "sha256": "fb18284ff0a83677354fb5eb14baee05f615884e396f6b95cc159fc653148440"
+      }
+    },
+    {
+      "filename": "375-checkout-review.png",
+      "description": "Selected items, exact PHP 325.50 total and Place Order action",
+      "route": "/checkout",
+      "capturedAt": "2026-11-16T13:27:07.001Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2818,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "checkout-name",
+          "type": "text",
+          "label": "Customer Full Name *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-email",
+          "type": "email",
+          "label": "Email Address *"
+        },
+        {
+          "tag": "input",
+          "id": "checkout-phone",
+          "type": "tel",
+          "label": "Contact Number *"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-address",
+          "type": "textarea",
+          "label": "Delivery Address *"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Cash on DeliverySimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "E-WalletSimulated selection only"
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "label": "Bank TransferSimulated selection only"
+        },
+        {
+          "tag": "textarea",
+          "id": "checkout-notes",
+          "type": "textarea",
+          "label": "Order Notes (optional)"
+        }
+      ],
+      "images": [
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-person'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%208a3%203%200%201%200%200-6%203%203%200%200%200%200%206m2-3a2%202%200%201%201-4%200%202%202%200%200%201%204%200m4%208c0%201-1%201-1%201H3s-1%200-1-1%201-4%206-4%206%203%206%204m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516%2010.68%2010.289%2010%208%2010s-3.516.68-4.168%201.332c-.678.678-.83%201.418-.832%201.664z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-envelope'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M0%204a2%202%200%200%201%202-2h12a2%202%200%200%201%202%202v8a2%202%200%200%201-2%202H2a2%202%200%200%201-2-2zm2-1a1%201%200%200%200-1%201v.217l7%204.2%207-4.2V4a1%201%200%200%200-1-1zm13%202.383-4.708%202.825L15%2011.105zm-.034%206.876-5.64-3.471L8%209.583l-1.326-.795-5.64%203.47A1%201%200%200%200%202%2013h12a1%201%200%200%200%20.966-.741M1%2011.105l4.708-2.897L1%205.383z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-telephone'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M3.654%201.328a.678.678%200%200%200-1.015-.063L1.605%202.3c-.483.484-.661%201.169-.45%201.77a17.6%2017.6%200%200%200%204.168%206.608%2017.6%2017.6%200%200%200%206.608%204.168c.601.211%201.286.033%201.77-.45l1.034-1.034a.678.678%200%200%200-.063-1.015l-2.307-1.794a.68.68%200%200%200-.58-.122l-2.19.547a1.75%201.75%200%200%201-1.657-.459L5.482%208.062a1.75%201.75%200%200%201-.46-1.657l.548-2.19a.68.68%200%200%200-.122-.58zM1.884.511a1.745%201.745%200%200%201%202.612.163L6.29%202.98c.329.423.445.974.315%201.494l-.547%202.19a.68.68%200%200%200%20.178.643l2.457%202.457a.68.68%200%200%200%20.644.178l2.189-.547a1.75%201.75%200%200%201%201.494.315l2.306%201.794c.829.645.905%201.87.163%202.611l-1.034%201.034c-.74.74-1.846%201.065-2.877.702a18.6%2018.6%200%200%201-7.01-4.42%2018.6%2018.6%200%200%201-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-geo-alt'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M12.166%208.94c-.524%201.062-1.234%202.12-1.96%203.07A32%2032%200%200%201%208%2014.58a32%2032%200%200%201-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304%207.867%203%206.862%203%206a5%205%200%200%201%2010%200c0%20.862-.305%201.867-.834%202.94M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010'/%3e%3cpath%20d='M8%208a2%202%200%201%201%200-4%202%202%200%200%201%200%204m0%201a3%203%200%201%200%200-6%203%203%200%200%200%200%206'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 18
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 40
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 40
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 1518,
+        "horizontalTables": [],
+        "headings": [
+          "Order summary",
+          "Explore",
+          "Say hello"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 44279,
+        "sha256": "709fb75d290f4694dd10a9b0d81ecef8496ce9e4da7a557d2a59de2211ba6c78"
+      }
+    },
+    {
+      "filename": "1280-confirmation.png",
+      "description": "Saved Pending order number, customer, payment, item snapshots and total",
+      "route": "/order/bde228e6-baa4-48c8-bead-54f7908ece60",
+      "capturedAt": "2026-11-16T13:27:11.989Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 2083,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 48
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 48
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 235,
+        "horizontalTables": [],
+        "headings": [
+          "Order placed successfully.",
+          "Delivery & payment",
+          "Order summary"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 79321,
+        "sha256": "58d6f2eaf9139f0bffd11ed0ab21168d06a312c196cfac0d50873fe37abf4308"
+      }
+    },
+    {
+      "filename": "375-confirmation.png",
+      "description": "Saved Pending order number, customer, payment, item snapshots and total",
+      "route": "/order/bde228e6-baa4-48c8-bead-54f7908ece60",
+      "capturedAt": "2026-11-16T13:27:12.298Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2980,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 40
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 40
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 187,
+        "horizontalTables": [],
+        "headings": [
+          "Order placed successfully.",
+          "Delivery & payment"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 45732,
+        "sha256": "588168e9e8abf4eabcbff406d6ca95bb1b5bff45d5dcc2780af18d42f678fa6e"
+      }
+    },
+    {
+      "filename": "375-confirmation-summary.png",
+      "description": "Saved order item snapshots and PHP 325.50 total",
+      "route": "/order/bde228e6-baa4-48c8-bead-54f7908ece60",
+      "capturedAt": "2026-11-16T13:27:12.491Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2980,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 40
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 40
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 1649,
+        "horizontalTables": [],
+        "headings": [
+          "Order summary"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 40104,
+        "sha256": "f2fd5a1509a01e0fc3b3d1b7a585abc860cb1c4459d0f3e313f21919bcc8070f"
+      }
+    },
+    {
+      "filename": "1280-admin-login.png",
+      "description": "Clearly labeled simulated admin login and guest shopping link",
+      "route": "/admin/login",
+      "capturedAt": "2026-11-16T13:27:13.200Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 925,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "admin-email",
+          "type": "email",
+          "label": "Email address"
+        },
+        {
+          "tag": "input",
+          "id": "admin-password",
+          "type": "password",
+          "label": "Password"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Good things,beautifullymanaged.",
+          "Admin login"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 78052,
+        "sha256": "384f1e0506668df8bc6f8b69e6fcd1b2a0afb71703ecff5c455747efc9f58d67"
+      }
+    },
+    {
+      "filename": "375-admin-login.png",
+      "description": "Clearly labeled simulated admin login and guest shopping link",
+      "route": "/admin/login",
+      "capturedAt": "2026-11-16T13:27:13.328Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 952,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "admin-email",
+          "type": "email",
+          "label": "Email address"
+        },
+        {
+          "tag": "input",
+          "id": "admin-password",
+          "type": "password",
+          "label": "Password"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [],
+        "headings": [
+          "Good things,beautifullymanaged.",
+          "Admin login"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 36702,
+        "sha256": "22fbd4b2858c8089490cb162f90adc4b5431bfd15d384b811bae4a9eb50bf848"
+      }
+    },
+    {
+      "filename": "1280-admin-dashboard.png",
+      "description": "Shared totals, PHP 325.50 Completed sales, recent order and low stock",
+      "route": "/admin",
+      "capturedAt": "2026-11-16T13:27:15.544Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1483,
+      "controls": [],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Orders table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "A little overview.",
+          "Recent orders"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 78563,
+        "sha256": "82a841f629868c5071ea590f1095982bc0f316d081877f9178e12744d594b1a8"
+      }
+    },
+    {
+      "filename": "375-admin-dashboard.png",
+      "description": "Shared totals, PHP 325.50 Completed sales, recent order and low stock",
+      "route": "/admin",
+      "capturedAt": "2026-11-16T13:27:15.718Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2520,
+      "controls": [],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Orders table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 789
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Orders table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "A little overview."
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 31805,
+        "sha256": "f5a75343c5080a2320ddf3bfb9ac086ad829ad70c147866ef07b9f17b9daa1c8"
+      }
+    },
+    {
+      "filename": "375-admin-dashboard-sales.png",
+      "description": "Customer count, Completed sales of PHP 325.50 and recent order",
+      "route": "/admin",
+      "capturedAt": "2026-11-16T13:27:15.865Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2520,
+      "controls": [],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Orders table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 789
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 811,
+        "horizontalTables": [
+          {
+            "label": "Orders table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Recent orders",
+          "Worth a little attention."
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 38544,
+        "sha256": "068fd58c0f2e4638f63e2d970fb21fe13db7af2ed83fc22ec794316426d283ad"
+      }
+    },
+    {
+      "filename": "1280-admin-products.png",
+      "description": "Searchable admin catalog with Active, Inactive and Out of Stock statuses",
+      "route": "/admin/products",
+      "capturedAt": "2026-11-16T13:27:16.702Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1889,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "admin-product-search",
+          "type": "search",
+          "label": "Search products"
+        },
+        {
+          "tag": "select",
+          "id": "admin-category-filter",
+          "type": "select-one",
+          "label": "Filter by category"
+        },
+        {
+          "tag": "select",
+          "id": "admin-status-filter",
+          "type": "select-one",
+          "label": "Filter by status"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM Updated — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Oud Al Sahra — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Spectre Sandal — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Cedar & Saffron — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Oud Reserve — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Products table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Products"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 101193,
+        "sha256": "932fe264960dfe073ff1e690ef8cf082da84111050c090e81452066fd7dd5f14"
+      }
+    },
+    {
+      "filename": "375-admin-products.png",
+      "description": "Searchable admin catalog with Active, Inactive and Out of Stock statuses",
+      "route": "/admin/products",
+      "capturedAt": "2026-11-16T13:27:17.141Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 1964,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "admin-product-search",
+          "type": "search",
+          "label": "Search products"
+        },
+        {
+          "tag": "select",
+          "id": "admin-category-filter",
+          "type": "select-one",
+          "label": "Filter by category"
+        },
+        {
+          "tag": "select",
+          "id": "admin-status-filter",
+          "type": "select-one",
+          "label": "Filter by status"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM Updated — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Oud Al Sahra — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Spectre Sandal — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Cedar & Saffron — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Oud Reserve — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Products table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 781
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Products table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Products"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 55469,
+        "sha256": "7863e458c2c64754b468271fec32be0818a146eb53d088c45f40fc30b414193f"
+      }
+    },
+    {
+      "filename": "375-admin-products-status.png",
+      "description": "Mobile product table scrolled to prices, stock and statuses",
+      "route": "/admin/products",
+      "capturedAt": "2026-11-16T13:27:17.291Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 1964,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "admin-product-search",
+          "type": "search",
+          "label": "Search products"
+        },
+        {
+          "tag": "select",
+          "id": "admin-category-filter",
+          "type": "select-one",
+          "label": "Filter by category"
+        },
+        {
+          "tag": "select",
+          "id": "admin-status-filter",
+          "type": "select-one",
+          "label": "Filter by status"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/shiyaaka-shadow.webp",
+          "alt": "Shiyaaka Shadow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/shiyaaka-snow.webp",
+          "alt": "Shiyaaka Snow — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        },
+        {
+          "src": "/images/products/hawas-kobra.webp",
+          "alt": "Hawas Kobra — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM Updated — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Hawas Azure — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Club de Nuit Noir — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Amber Reverie — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Oud Al Sahra — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Musk Lumière — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Rose of Arabia — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Turathi Blue Horizon — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Khamrah Golden Hour — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Spectre Sandal — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Cedar & Saffron — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        },
+        {
+          "label": "Oud Reserve — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Products table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 781
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 357,
+        "horizontalTables": [
+          {
+            "label": "Products table, scroll horizontally on smaller screens",
+            "scrollLeft": 303
+          }
+        ],
+        "headings": []
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 30775,
+        "sha256": "534aea75303e4955e8d2fa6f31fb57446344d69944ee40a94428cb7081c1b18c"
+      }
+    },
+    {
+      "filename": "1280-admin-product-form.png",
+      "description": "Populated product fields, image preview, upload controls and validation help",
+      "route": "/admin/products/p-hawas-ice/edit",
+      "capturedAt": "2026-11-16T13:27:17.828Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1219,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "product-name",
+          "type": "text",
+          "label": "Product name *"
+        },
+        {
+          "tag": "input",
+          "id": "product-size",
+          "type": "text",
+          "label": "Bottle size"
+        },
+        {
+          "tag": "input",
+          "id": "product-brand",
+          "type": "text",
+          "label": "Brand / collection"
+        },
+        {
+          "tag": "select",
+          "id": "product-category",
+          "type": "select-one",
+          "label": "Category *"
+        },
+        {
+          "tag": "textarea",
+          "id": "product-description",
+          "type": "textarea",
+          "label": "Description *"
+        },
+        {
+          "tag": "input",
+          "id": "product-price",
+          "type": "text",
+          "label": "Price (PHP) *"
+        },
+        {
+          "tag": "input",
+          "id": "product-stock",
+          "type": "number",
+          "label": "Stock quantity *"
+        },
+        {
+          "tag": "input",
+          "id": "product-active",
+          "type": "checkbox",
+          "label": "Active on storefront"
+        },
+        {
+          "tag": "input",
+          "id": "product-image",
+          "type": "text",
+          "label": "Or use an image link"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 265
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-cloud-upload'%20viewBox='0%200%2016%2016'%3e%3cpath%20fill-rule='evenodd'%20d='M4.406%201.342A5.53%205.53%200%200%201%208%200c2.69%200%204.923%202%205.166%204.579C14.758%204.804%2016%206.137%2016%207.773%2016%209.569%2014.502%2011%2012.687%2011H10a.5.5%200%200%201%200-1h2.688C13.979%2010%2015%208.988%2015%207.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188%202.825%2010.328%201%208%201a4.53%204.53%200%200%200-2.941%201.1c-.757.652-1.153%201.438-1.153%202.055v.448l-.445.049C2.064%204.805%201%205.952%201%207.318%201%208.785%202.23%2010%203.781%2010H6a.5.5%200%200%201%200%201H3.781C1.708%2011%200%209.366%200%207.318c0-1.763%201.266-3.223%202.942-3.593.143-.863.698-1.723%201.464-2.383'/%3e%3cpath%20fill-rule='evenodd'%20d='M7.646%204.146a.5.5%200%200%201%20.708%200l3%203a.5.5%200%200%201-.708.708L8.5%205.707V14.5a.5.5%200%200%201-1%200V5.707L5.354%207.854a.5.5%200%201%201-.708-.708z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 17
+        }
+      ],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 206,
+        "horizontalTables": [],
+        "headings": [
+          "Edit fragrance",
+          "Fragrance details",
+          "Product image *"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 168060,
+        "sha256": "58d780bef165a2382721458a4eed902cfdff8b90455415f601948ab1cc743201"
+      }
+    },
+    {
+      "filename": "375-admin-product-form.png",
+      "description": "Populated product fields, image preview, upload controls and validation help",
+      "route": "/admin/products/p-hawas-ice/edit",
+      "capturedAt": "2026-11-16T13:27:18.193Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2350,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "product-name",
+          "type": "text",
+          "label": "Product name *"
+        },
+        {
+          "tag": "input",
+          "id": "product-size",
+          "type": "text",
+          "label": "Bottle size"
+        },
+        {
+          "tag": "input",
+          "id": "product-brand",
+          "type": "text",
+          "label": "Brand / collection"
+        },
+        {
+          "tag": "select",
+          "id": "product-category",
+          "type": "select-one",
+          "label": "Category *"
+        },
+        {
+          "tag": "textarea",
+          "id": "product-description",
+          "type": "textarea",
+          "label": "Description *"
+        },
+        {
+          "tag": "input",
+          "id": "product-price",
+          "type": "text",
+          "label": "Price (PHP) *"
+        },
+        {
+          "tag": "input",
+          "id": "product-stock",
+          "type": "number",
+          "label": "Stock quantity *"
+        },
+        {
+          "tag": "input",
+          "id": "product-active",
+          "type": "checkbox",
+          "label": "Active on storefront"
+        },
+        {
+          "tag": "input",
+          "id": "product-image",
+          "type": "text",
+          "label": "Or use an image link"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 285
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-cloud-upload'%20viewBox='0%200%2016%2016'%3e%3cpath%20fill-rule='evenodd'%20d='M4.406%201.342A5.53%205.53%200%200%201%208%200c2.69%200%204.923%202%205.166%204.579C14.758%204.804%2016%206.137%2016%207.773%2016%209.569%2014.502%2011%2012.687%2011H10a.5.5%200%200%201%200-1h2.688C13.979%2010%2015%208.988%2015%207.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188%202.825%2010.328%201%208%201a4.53%204.53%200%200%200-2.941%201.1c-.757.652-1.153%201.438-1.153%202.055v.448l-.445.049C2.064%204.805%201%205.952%201%207.318%201%208.785%202.23%2010%203.781%2010H6a.5.5%200%200%201%200%201H3.781C1.708%2011%200%209.366%200%207.318c0-1.763%201.266-3.223%202.942-3.593.143-.863.698-1.723%201.464-2.383'/%3e%3cpath%20fill-rule='evenodd'%20d='M7.646%204.146a.5.5%200%200%201%20.708%200l3%203a.5.5%200%200%201-.708.708L8.5%205.707V14.5a.5.5%200%200%201-1%200V5.707L5.354%207.854a.5.5%200%201%201-.708-.708z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 17
+        }
+      ],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 177,
+        "horizontalTables": [],
+        "headings": [
+          "Edit fragrance",
+          "Fragrance details"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 40535,
+        "sha256": "9fc33c7f59f3e4e5df63de781e8d85a1213c90aa0f5a615929758aeea21af45a"
+      }
+    },
+    {
+      "filename": "375-admin-product-image.png",
+      "description": "Real product preview, upload/change controls, image link and save action",
+      "route": "/admin/products/p-hawas-ice/edit",
+      "capturedAt": "2026-11-16T13:27:18.333Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2350,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "product-name",
+          "type": "text",
+          "label": "Product name *"
+        },
+        {
+          "tag": "input",
+          "id": "product-size",
+          "type": "text",
+          "label": "Bottle size"
+        },
+        {
+          "tag": "input",
+          "id": "product-brand",
+          "type": "text",
+          "label": "Brand / collection"
+        },
+        {
+          "tag": "select",
+          "id": "product-category",
+          "type": "select-one",
+          "label": "Category *"
+        },
+        {
+          "tag": "textarea",
+          "id": "product-description",
+          "type": "textarea",
+          "label": "Description *"
+        },
+        {
+          "tag": "input",
+          "id": "product-price",
+          "type": "text",
+          "label": "Price (PHP) *"
+        },
+        {
+          "tag": "input",
+          "id": "product-stock",
+          "type": "number",
+          "label": "Stock quantity *"
+        },
+        {
+          "tag": "input",
+          "id": "product-active",
+          "type": "checkbox",
+          "label": "Active on storefront"
+        },
+        {
+          "tag": "input",
+          "id": "product-image",
+          "type": "text",
+          "label": "Or use an image link"
+        }
+      ],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 285
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='currentColor'%20class='bi%20bi-cloud-upload'%20viewBox='0%200%2016%2016'%3e%3cpath%20fill-rule='evenodd'%20d='M4.406%201.342A5.53%205.53%200%200%201%208%200c2.69%200%204.923%202%205.166%204.579C14.758%204.804%2016%206.137%2016%207.773%2016%209.569%2014.502%2011%2012.687%2011H10a.5.5%200%200%201%200-1h2.688C13.979%2010%2015%208.988%2015%207.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188%202.825%2010.328%201%208%201a4.53%204.53%200%200%200-2.941%201.1c-.757.652-1.153%201.438-1.153%202.055v.448l-.445.049C2.064%204.805%201%205.952%201%207.318%201%208.785%202.23%2010%203.781%2010H6a.5.5%200%200%201%200%201H3.781C1.708%2011%200%209.366%200%207.318c0-1.763%201.266-3.223%202.942-3.593.143-.863.698-1.723%201.464-2.383'/%3e%3cpath%20fill-rule='evenodd'%20d='M7.646%204.146a.5.5%200%200%201%20.708%200l3%203a.5.5%200%200%201-.708.708L8.5%205.707V14.5a.5.5%200%200%201-1%200V5.707L5.354%207.854a.5.5%200%201%201-.708-.708z'/%3e%3c/svg%3e",
+          "alt": "",
+          "decorative": true,
+          "naturalWidth": 16,
+          "naturalHeight": 16,
+          "displayedWidth": 17
+        }
+      ],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 1326,
+        "horizontalTables": [],
+        "headings": [
+          "Product image *"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 101339,
+        "sha256": "a73da6d2d3007f91795c33a17475c47f480239268aa1a2752773356753321a8a"
+      }
+    },
+    {
+      "filename": "1280-admin-categories.png",
+      "description": "Categories, assigned product counts and edit/delete entry points",
+      "route": "/admin/categories",
+      "capturedAt": "2026-11-16T13:27:18.812Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "category-name",
+          "type": "text",
+          "label": "Category name *"
+        },
+        {
+          "tag": "textarea",
+          "id": "category-description",
+          "type": "textarea",
+          "label": "Description (optional)"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Categories table, scroll horizontally on smaller screens",
+          "clientWidth": 553,
+          "scrollWidth": 680
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Categories table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Categories",
+          "Your scent families",
+          "Add a scent family"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 78184,
+        "sha256": "803f878c61061a476566c665cce9859923e784fbb0112470d59feb681a20fe72"
+      }
+    },
+    {
+      "filename": "375-admin-categories.png",
+      "description": "Categories, assigned product counts and edit/delete entry points",
+      "route": "/admin/categories",
+      "capturedAt": "2026-11-16T13:27:18.964Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 1187,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "category-name",
+          "type": "text",
+          "label": "Category name *"
+        },
+        {
+          "tag": "textarea",
+          "id": "category-description",
+          "type": "textarea",
+          "label": "Description (optional)"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Categories table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 640
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Categories table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Categories",
+          "Your scent families",
+          "Add a scent family"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 44344,
+        "sha256": "b03e260f4ffde32a16f7d89f6a6d4982cb1af989be285d95297f0106ef576596"
+      }
+    },
+    {
+      "filename": "375-admin-categories-actions.png",
+      "description": "Mobile category table scrolled to assigned product counts and edit/delete actions",
+      "route": "/admin/categories",
+      "capturedAt": "2026-11-16T13:27:19.194Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 1187,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "category-name",
+          "type": "text",
+          "label": "Category name *"
+        },
+        {
+          "tag": "textarea",
+          "id": "category-description",
+          "type": "textarea",
+          "label": "Description (optional)"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Categories table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 640
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 187,
+        "horizontalTables": [
+          {
+            "label": "Categories table, scroll horizontally on smaller screens",
+            "scrollLeft": 307
+          }
+        ],
+        "headings": [
+          "Your scent families",
+          "Add a scent family"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 29201,
+        "sha256": "dbe7ed3b4a375f1f8cd3f1674a75f2f72b463121395763adf8821de505fd5dbb"
+      }
+    },
+    {
+      "filename": "1280-admin-category-form.png",
+      "description": "Populated category editing form and unique-name help",
+      "route": "/admin/categories",
+      "capturedAt": "2026-11-16T13:27:19.505Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "category-name",
+          "type": "text",
+          "label": "Category name *"
+        },
+        {
+          "tag": "textarea",
+          "id": "category-description",
+          "type": "textarea",
+          "label": "Description (optional)"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Categories table, scroll horizontally on smaller screens",
+          "clientWidth": 553,
+          "scrollWidth": 680
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Categories table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Categories",
+          "Your scent families",
+          "Edit category"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 86292,
+        "sha256": "b79ae4169fe00c24c9118a55fdf316cd1779a7ebcb2a50927a47a1445e220522"
+      }
+    },
+    {
+      "filename": "375-admin-category-form.png",
+      "description": "Populated category editing form and unique-name help",
+      "route": "/admin/categories",
+      "capturedAt": "2026-11-16T13:27:19.754Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 1187,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "category-name",
+          "type": "text",
+          "label": "Category name *"
+        },
+        {
+          "tag": "textarea",
+          "id": "category-description",
+          "type": "textarea",
+          "label": "Description (optional)"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Categories table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 640
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 287,
+        "horizontalTables": [
+          {
+            "label": "Categories table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Edit category"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 44440,
+        "sha256": "e6be00def235e268617ad079c06f720bf200237a3cc0c55b5f918fa33a7e19f5"
+      }
+    },
+    {
+      "filename": "1280-admin-orders.png",
+      "description": "Shared saved order, customer, date, total, payment and Completed status",
+      "route": "/admin/orders",
+      "capturedAt": "2026-11-16T13:27:20.344Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "order-search",
+          "type": "search",
+          "label": "Search orders"
+        },
+        {
+          "tag": "select",
+          "id": "order-status",
+          "type": "select-one",
+          "label": "Filter order status"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Orders table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Orders"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 59556,
+        "sha256": "d651fecad5d1ca5aeb5c4231a880c1ab7fb4026e51c88fca58c79295ffa271b7"
+      }
+    },
+    {
+      "filename": "375-admin-orders.png",
+      "description": "Shared saved order, customer, date, total, payment and Completed status",
+      "route": "/admin/orders",
+      "capturedAt": "2026-11-16T13:27:20.569Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "order-search",
+          "type": "search",
+          "label": "Search orders"
+        },
+        {
+          "tag": "select",
+          "id": "order-status",
+          "type": "select-one",
+          "label": "Filter order status"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Orders table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 789
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Orders table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Orders"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 29568,
+        "sha256": "51b935ede35166666199475c10c2c9ff04a6946ed539689a40aa240ed7730d19"
+      }
+    },
+    {
+      "filename": "375-admin-orders-status.png",
+      "description": "Mobile order table scrolled to saved total, payment and Completed status",
+      "route": "/admin/orders",
+      "capturedAt": "2026-11-16T13:27:20.725Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "order-search",
+          "type": "search",
+          "label": "Search orders"
+        },
+        {
+          "tag": "select",
+          "id": "order-status",
+          "type": "select-one",
+          "label": "Filter order status"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Orders table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 789
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Orders table, scroll horizontally on smaller screens",
+            "scrollLeft": 419
+          }
+        ],
+        "headings": [
+          "Orders"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 28762,
+        "sha256": "457c4b1cefe5ee9174c3640a1515efbd3c4a73f8997b2737ec8ec7e76b0b03dc"
+      }
+    },
+    {
+      "filename": "1280-admin-order.png",
+      "description": "Completed order, immutable purchase snapshots, customer details and status history",
+      "route": "/admin/orders/bde228e6-baa4-48c8-bead-54f7908ece60",
+      "capturedAt": "2026-11-16T13:27:21.187Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 1298,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Order items table",
+          "clientWidth": 635,
+          "scrollWidth": 680
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Order items table",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "OA-20261116-BDE228E6",
+          "Fragrance selection",
+          "Order journey",
+          "Customer",
+          "Manage status"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 95257,
+        "sha256": "7cdd729a6cb52cdb622ab7810b727f88b5892e4d6a4af702fe2dcee545cd739b"
+      }
+    },
+    {
+      "filename": "375-admin-order.png",
+      "description": "Completed order, immutable purchase snapshots, customer details and status history",
+      "route": "/admin/orders/bde228e6-baa4-48c8-bead-54f7908ece60",
+      "capturedAt": "2026-11-16T13:27:21.455Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2165,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Order items table",
+          "clientWidth": 333,
+          "scrollWidth": 640
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Order items table",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "OA-20261116-BDE228E6",
+          "Fragrance selection"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 44221,
+        "sha256": "0a2f6c909f68549a52df6dcc3d64ce0b983c80da85a2a21361d97f8907211f90"
+      }
+    },
+    {
+      "filename": "375-admin-order-status.png",
+      "description": "Customer/payment details, final Completed status and status-management rules",
+      "route": "/admin/orders/bde228e6-baa4-48c8-bead-54f7908ece60",
+      "capturedAt": "2026-11-16T13:27:21.580Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 2165,
+      "controls": [],
+      "images": [
+        {
+          "src": "/images/products/hawas-ice.webp",
+          "alt": "Hawas Ice — sample product image",
+          "decorative": false,
+          "naturalWidth": 1254,
+          "naturalHeight": 1254,
+          "displayedWidth": 44
+        }
+      ],
+      "backgrounds": [
+        {
+          "label": "9PM After Hours — illustrative sample bottle",
+          "src": "http://127.0.0.1:5174/images/catalog.png",
+          "naturalWidth": 1448,
+          "displayedWidth": 44
+        }
+      ],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Order items table",
+          "clientWidth": 333,
+          "scrollWidth": 640
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 1265,
+        "horizontalTables": [
+          {
+            "label": "Order items table",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Customer",
+          "Manage status"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 39640,
+        "sha256": "5d4f3dae6e0054733cab7082742557d018368f41c3cbeb52be04e8653323cf71"
+      }
+    },
+    {
+      "filename": "1280-admin-customers.png",
+      "description": "One normalized-email customer and PHP 325.50 Completed spending",
+      "route": "/admin/customers",
+      "capturedAt": "2026-11-16T13:27:21.918Z",
+      "captureType": "viewport",
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "customer-search",
+          "type": "search",
+          "label": "Search customers"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Customers table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Customers"
+        ]
+      },
+      "png": {
+        "width": 1280,
+        "height": 900,
+        "bytes": 61149,
+        "sha256": "f7b607328aa616a76e766877a5379eb40e457252f7347fb1e90c75bf741fc1a7"
+      }
+    },
+    {
+      "filename": "375-admin-customers.png",
+      "description": "One normalized-email customer and PHP 325.50 Completed spending",
+      "route": "/admin/customers",
+      "capturedAt": "2026-11-16T13:27:22.106Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "customer-search",
+          "type": "search",
+          "label": "Search customers"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Customers table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 671
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Customers table, scroll horizontally on smaller screens",
+            "scrollLeft": 0
+          }
+        ],
+        "headings": [
+          "Customers"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 35965,
+        "sha256": "4e24f07cd895059b804290a82c46b4bc8e442c528cb7cacfbda9f11d9f92f3c7"
+      }
+    },
+    {
+      "filename": "375-admin-customers-spending.png",
+      "description": "Mobile customer table scrolled to order count and Completed spending",
+      "route": "/admin/customers",
+      "capturedAt": "2026-11-16T13:27:22.312Z",
+      "captureType": "viewport",
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "documentHeight": 900,
+      "controls": [
+        {
+          "tag": "input",
+          "id": "customer-search",
+          "type": "search",
+          "label": "Search customers"
+        }
+      ],
+      "images": [],
+      "backgrounds": [],
+      "imageFallbacks": 0,
+      "unlabeledControls": [],
+      "clippedControls": [],
+      "scrollingTables": [
+        {
+          "label": "Customers table, scroll horizontally on smaller screens",
+          "clientWidth": 333,
+          "scrollWidth": 671
+        }
+      ],
+      "framing": {
+        "scrollX": 0,
+        "scrollY": 0,
+        "horizontalTables": [
+          {
+            "label": "Customers table, scroll horizontally on smaller screens",
+            "scrollLeft": 338
+          }
+        ],
+        "headings": [
+          "Customers"
+        ]
+      },
+      "png": {
+        "width": 375,
+        "height": 900,
+        "bytes": 33455,
+        "sha256": "5885ba14bacc2cbe27b1ad62d38cf0fab088c0623730d577ca9d4095749130ab"
+      }
+    }
+  ],
+  "fixture": {
+    "products": 16,
+    "categories": 3,
+    "customer": "Maya Sample",
+    "email": "maya@example.com",
+    "paymentMethod": "Cash on Delivery",
+    "pricing": [
+      {
+        "productId": "p-9pm",
+        "initialName": "9PM After Hours",
+        "unitPriceCentavos": 12000,
+        "quantity": 2
+      },
+      {
+        "productId": "p-hawas-ice",
+        "initialName": "Hawas Ice",
+        "unitPriceCentavos": 8550,
+        "quantity": 1
+      }
+    ],
+    "totalCentavos": 32550,
+    "note": "Two prices changed in the isolated browser through the shared store API, solely for the assessment arithmetic example. Bundled seed prices are unchanged.",
+    "orderId": "bde228e6-baa4-48c8-bead-54f7908ece60",
+    "orderNumber": "OA-20261116-BDE228E6",
+    "orderCreatedAt": "2026-11-16T13:27:07.166Z",
+    "finalStock": {
+      "p-9pm": 16,
+      "p-hawas-ice": 19
+    },
+    "postPurchaseEdit": {
+      "productId": "p-9pm",
+      "currentName": "9PM Updated",
+      "currentPriceCentavos": 12500,
+      "savedOrderName": "9PM After Hours",
+      "savedOrderUnitPriceCentavos": 12000
+    },
+    "finalDashboard": {
+      "products": 16,
+      "orders": 1,
+      "pending": 0,
+      "completed": 1,
+      "customers": 1,
+      "sales": 32550
+    }
+  },
+  "flowChecks": [
+    {
+      "name": "Out-of-stock purchasing disabled",
+      "status": "Pass"
+    },
+    {
+      "name": "Duplicate merge, refresh persistence and exact PHP 325.50",
+      "status": "Pass"
+    },
+    {
+      "name": "Empty guest checkout blocked",
+      "status": "Pass"
+    },
+    {
+      "name": "Saved Pending order, matching totals, stock deducted and cart cleared",
+      "status": "Pass"
+    },
+    {
+      "name": "Matching admin order follows all four status actions to Completed",
+      "status": "Pass"
+    },
+    {
+      "name": "Admin UI edit persists; saved order keeps original name and unit price after refresh",
+      "status": "Pass"
+    },
+    {
+      "name": "Completed sales and normalized-email customer summary match the order",
+      "status": "Pass"
+    }
+  ],
+  "browser": {
+    "engine": "Chromium",
+    "version": "158.0.8127.18"
+  },
+  "finishedAt": "2026-11-16T13:27:22.325Z",
+  "captureStatus": "Pass",
+  "sourceCommit": "2e9cd9180bb95b75a04978fe06e0905562977e8c",
+  "acceptanceChecks": [
+    {
+      "id": "01",
+      "result": "Pass",
+      "note": "Search, category and both price sorts work together; no-match and invalid-product pages are handled.",
+      "evidence": [
+        "tests/e2e/shopping.spec.js",
+        "tests/store.test.js"
+      ]
+    },
+    {
+      "id": "02",
+      "result": "Pass",
+      "note": "Duplicate additions merge, the cart survives refresh, and 2 x PHP 120.00 + PHP 85.50 equals PHP 325.50.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "1280-cart.png",
+        "375-cart.png"
+      ]
+    },
+    {
+      "id": "03",
+      "result": "Pass",
+      "note": "Empty/invalid checkout fields and invalid, fractional or excessive quantities are rejected.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js"
+      ]
+    },
+    {
+      "id": "04",
+      "result": "Pass",
+      "note": "Inactive/zero-stock items cannot be ordered. Price or availability changes require review before saving.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "1280-zero-stock.png",
+        "375-zero-stock.png"
+      ]
+    },
+    {
+      "id": "05",
+      "result": "Pass",
+      "note": "A saved Pending order appears in admin with matching items/total; stock decreases and purchased cart items clear. Failed writes preserve the cart.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "1280-confirmation.png",
+        "375-confirmation.png"
+      ]
+    },
+    {
+      "id": "06",
+      "result": "Pass",
+      "note": "Admin product/category changes reach the shop after refresh. Referenced products and assigned categories cannot be deleted.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "tests/e2e/product-images.spec.js"
+      ]
+    },
+    {
+      "id": "07",
+      "result": "Pass",
+      "note": "Only allowed status transitions save. Eligible cancellation restores stock once, including after reload; failed writes do not change stock.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "1280-admin-order.png",
+        "375-admin-order.png"
+      ]
+    },
+    {
+      "id": "08",
+      "result": "Pass",
+      "note": "Sales include Completed orders only. Customers group normalized emails and use the latest submitted contact details.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "1280-admin-dashboard.png",
+        "375-admin-customers.png"
+      ]
+    },
+    {
+      "id": "09",
+      "result": "Pass",
+      "note": "Saved order names, unit prices and images survive catalog edits and reload. Browser data persists for the chosen LocalStorage approach.",
+      "evidence": [
+        "tests/store.test.js",
+        "tests/e2e/shopping.spec.js",
+        "tests/e2e/product-images.spec.js"
+      ]
+    },
+    {
+      "id": "10",
+      "result": "Pass",
+      "note": "Customer/admin layouts passed at 375, 768 and 1280 px in the recorded browser suite. The 45 replacement viewport screenshots have loaded images, labeled form inputs, no horizontal page overflow and no runtime errors.",
+      "evidence": [
+        "tests/e2e/responsive.spec.js",
+        "tests/e2e/header-search.spec.js",
+        "tests/e2e/catalog.spec.js",
+        "browser-results.json"
+      ]
+    }
+  ],
+  "verification": {
+    "runDate": "2026-11-16",
+    "node": "v24.14.0",
+    "platform": "win32",
+    "dataTests": {
+      "command": "npm.cmd test",
+      "passed": 36,
+      "failed": 0,
+      "skipped": 0,
+      "source": "tests/store.test.js"
+    },
+    "browserTests": {
+      "command": "npm.cmd run test:e2e",
+      "passed": 32,
+      "failed": 0,
+      "skipped": 0,
+      "flaky": 0,
+      "startTime": "2026-11-16T13:01:50.046Z",
+      "durationMs": 359487.499,
+      "tests": [
+        {
+          "file": "tests/e2e/catalog.spec.js",
+          "line": 9,
+          "title": "all four new perfumes have working images and connect guest checkout to admin",
+          "status": "passed",
+          "durationMs": 25089
+        },
+        {
+          "file": "tests/e2e/catalog.spec.js",
+          "line": 55,
+          "title": "existing browser catalogs receive the additions without resetting their cart or orders",
+          "status": "passed",
+          "durationMs": 6011
+        },
+        {
+          "file": "tests/e2e/catalog.spec.js",
+          "line": 89,
+          "title": "new perfume cards and images fit mobile, tablet and desktop screens",
+          "status": "passed",
+          "durationMs": 7992
+        },
+        {
+          "file": "tests/e2e/header-search.spec.js",
+          "line": 4,
+          "title": "one catalog search works from Home, categories and other pages at 375px",
+          "status": "passed",
+          "durationMs": 12544
+        },
+        {
+          "file": "tests/e2e/header-search.spec.js",
+          "line": 4,
+          "title": "one catalog search works from Home, categories and other pages at 768px",
+          "status": "passed",
+          "durationMs": 13512
+        },
+        {
+          "file": "tests/e2e/header-search.spec.js",
+          "line": 4,
+          "title": "one catalog search works from Home, categories and other pages at 1280px",
+          "status": "passed",
+          "durationMs": 15574
+        },
+        {
+          "file": "tests/e2e/product-images.spec.js",
+          "line": 14,
+          "title": "product photo upload, replacement and image links persist at 375px",
+          "status": "passed",
+          "durationMs": 17913
+        },
+        {
+          "file": "tests/e2e/product-images.spec.js",
+          "line": 14,
+          "title": "product photo upload, replacement and image links persist at 1280px",
+          "status": "passed",
+          "durationMs": 12952
+        },
+        {
+          "file": "tests/e2e/product-images.spec.js",
+          "line": 82,
+          "title": "invalid, oversized and unreadable photos keep the previous image and form details",
+          "status": "passed",
+          "durationMs": 6587
+        },
+        {
+          "file": "tests/e2e/product-images.spec.js",
+          "line": 102,
+          "title": "an uploaded JPEG stays in the form when storage fails and saves after retry",
+          "status": "passed",
+          "durationMs": 5944
+        },
+        {
+          "file": "tests/e2e/responsive.spec.js",
+          "line": 4,
+          "title": "customer/admin layouts and navigation at 375px",
+          "status": "passed",
+          "durationMs": 21033
+        },
+        {
+          "file": "tests/e2e/responsive.spec.js",
+          "line": 4,
+          "title": "customer/admin layouts and navigation at 768px",
+          "status": "passed",
+          "durationMs": 24995
+        },
+        {
+          "file": "tests/e2e/responsive.spec.js",
+          "line": 4,
+          "title": "customer/admin layouts and navigation at 1280px",
+          "status": "passed",
+          "durationMs": 29235
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 34,
+          "title": "typed product quantity is the quantity added by the next click",
+          "status": "passed",
+          "durationMs": 4688
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 45,
+          "title": "search, category and both price sorts combine; unavailable products are handled",
+          "status": "passed",
+          "durationMs": 6799
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 68,
+          "title": "invalid quantities block purchasing and checkout; related products reset quantity",
+          "status": "passed",
+          "durationMs": 4140
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 85,
+          "title": "selected checkout connects to admin, completes, updates sales and preserves snapshots",
+          "status": "passed",
+          "durationMs": 12680
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 137,
+          "title": "Buy Now bypasses the cart and checkout details survive editing items",
+          "status": "passed",
+          "durationMs": 5011
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 160,
+          "title": "checkout rejects invalid fields and empty/invalid direct checkout",
+          "status": "passed",
+          "durationMs": 4710
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 176,
+          "title": "price changes require an explicit review; admin edits cannot overwrite purchased stock",
+          "status": "passed",
+          "durationMs": 8388
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 201,
+          "title": "failed save preserves cart, quantities and form; saving disables duplicate submission",
+          "status": "passed",
+          "durationMs": 5983
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 232,
+          "title": "customer cancellation restores stock once and remains final after refresh",
+          "status": "passed",
+          "durationMs": 7207
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 249,
+          "title": "admin category/product CRUD is reflected in the storefront and deletion is confirmed",
+          "status": "passed",
+          "durationMs": 7525
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 287,
+          "title": "referenced products offer deactivation and assigned categories cannot be deleted",
+          "status": "passed",
+          "durationMs": 5878
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 304,
+          "title": "stock changes block checkout and unavailable cart items can be left for later",
+          "status": "passed",
+          "durationMs": 6105
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 332,
+          "title": "cart quantity keeps focus and saves every digit when typing 5 to 12",
+          "status": "passed",
+          "durationMs": 3578
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 347,
+          "title": "typing stays available during queued quantity saves and checkout waits for the last one",
+          "status": "passed",
+          "durationMs": 3779
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 382,
+          "title": "an invalid draft remains blocked when an earlier quantity save finishes",
+          "status": "passed",
+          "durationMs": 2834
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 401,
+          "title": "malformed saved category images show recovery and preserve data until reset is confirmed",
+          "status": "passed",
+          "durationMs": 3309
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 423,
+          "title": "admin distinguishes empty browser data from filters hiding a saved guest order",
+          "status": "passed",
+          "durationMs": 6329
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 453,
+          "title": "resetting orders and sales keeps custom catalog, prices, inventory and cart after reload",
+          "status": "passed",
+          "durationMs": 9672
+        },
+        {
+          "file": "tests/e2e/shopping.spec.js",
+          "line": 502,
+          "title": "failed orders reset keeps history and sales and permits retry",
+          "status": "passed",
+          "durationMs": 5847
+        }
+      ]
+    },
+    "productionBuild": {
+      "command": "npm.cmd run build",
+      "result": "Pass",
+      "modulesTransformed": 71
+    },
+    "screenshotChecks": {
+      "result": "Pass",
+      "capturedAt": "2026-11-16T13:26:54.135Z",
+      "pngCount": 45,
+      "desktop": {
+        "count": 17,
+        "width": 1280,
+        "height": 900
+      },
+      "mobile": {
+        "count": 28,
+        "width": 375,
+        "height": 900
+      },
+      "horizontalPageOverflow": 0,
+      "clippedControlsOutsideTables": 0,
+      "missingVisibleFormLabels": 0,
+      "brokenImages": 0,
+      "runtimeExceptions": 0,
+      "consoleErrors": 0
+    },
+    "scope": "Automated Node tests and headless Chromium on Windows. No backend/database tests apply to this browser-only app. Physical devices, other browser engines, screen readers, exhaustive keyboard traversal and final hosting/video/access links were not verified.",
+    "note": "Only screenshot capture and documentation were updated for this refinement. The recorded 36 data tests, 32 browser tests and build were run earlier on the same unchanged application code."
+  }
+}

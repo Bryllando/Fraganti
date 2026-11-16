@@ -85,3 +85,5 @@ To start again, open **Admin → Overview → Reset demo data** and confirm. Thi
 | `/admin/orders` | Orders |
 | `/admin/orders/:id` | Order details and status |
 | `/admin/customers` | Customer summary |
+
+[Desktop/mobile screenshots](screenshots/README.md) | [Test log](TEST-LOG.md) | [System explanation](SYSTEM-EXPLANATION.md)
